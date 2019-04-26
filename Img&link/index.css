@@ -1,0 +1,30 @@
+#list{
+	text-align: center;
+
+}
+img{
+	max-width: 300px;
+	border: 3px solid red;
+	/*border-width: 3px;
+	border-color: red;
+	border-style: solid;*/
+}
+img:hover{
+	border-radius: 50%;	
+}
+a{
+	color: black;
+	text-decoration-line: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: green;
+}
+a:visted{
+	color: red;
+}
+a:hover{
+	color: grey;
+}
+a:active{
+	color: green;
+}

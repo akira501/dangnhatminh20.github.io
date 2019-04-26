@@ -1,0 +1,25 @@
+div{
+	text-align: center;
+}
+img{
+	max-width: 500px;
+	border: 3px solid blue;
+}
+.name{
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+	text-decoration-line: none;
+}
+.price::after{
+	content: " VND";
+}
+a:visted{
+	color: red;
+}
+a:hover{
+	color: grey;
+}
+a:active{
+	color: green;
+}
