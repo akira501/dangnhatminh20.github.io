@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.grid-image {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 100px;
+  grid-gap: 119.6px;
+}
+
+.grid-item {  
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  transition: all 0.5s linear;
+}
+img{
+  width: 300px;
+  height: 300px;
+}
+.grid-item:hover{
+  transform: scale(1.5);
+}
