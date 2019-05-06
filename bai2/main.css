@@ -8,7 +8,8 @@
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 100px;
-  grid-gap: 119.6px;
+  grid-gap: 10px;
+  margin: auto;
 }
 
 .grid-item {  
