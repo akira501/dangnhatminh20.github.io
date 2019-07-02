@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data table ES6 Template String</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<body>
+	<h1>Data Table Users</h1>
+	<div class="table-wapper">
+		<table>
+			<thead>
+					<tr>
+						<th>Ảnh đại diện</th>
+
+						<th class="click-sort" data-order="0" data-name="display-name" onclick="sort(this)">Tên
+							<span class="desc">
+								<i class="fas fa-sort-up"></i>
+							</span>
+							<span class="asc">
+								<i class="fas fa-sort-down"></i>
+							</span>
+						</th>	
+
+						<th class="click-sort" data-order="0" data-name="reputation" onclick="sort(this)">Reputation
+							<span class="desc" >
+								<i class="fas fa-sort-up"></i>
+							</span>
+							<span class="asc" >
+								<i class="fas fa-sort-down"></i>
+							</span>
+						</th>
+
+						<th>Link website</th>
+
+						<th class="click-sort" data-order="0" data-name="creation-date" onclick="sort(this)">Ngày tham gia
+							<span class="desc">
+								<i class="fas fa-sort-up"></i>
+							</span>
+							<span class="asc">
+								<i class="fas fa-sort-down"></i>
+							</span>
+						</th>
+					</tr>
+			</thead>
+			<tbody id="users">
+				
+			</tbody>
+		</table>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="script-table2.js"></script>
+</html>

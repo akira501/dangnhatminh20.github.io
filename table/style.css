@@ -6,6 +6,8 @@
 
 body{
 	font-family: Arial, sans-serif;
+	max-width: 1280px;
+	margin: auto;
 }
 h1{
 	text-align: center;
@@ -29,9 +31,11 @@ th, td{
 	padding: 10px;
 }
 th{
-	background-color: #269bc7;
+	background-color: #425a65;
 	color: #FFF;
 	text-align: left;
+	min-width: 150px;
+	cursor: pointer;
 }
 td a{
 	text-decoration: none;
@@ -40,4 +44,38 @@ td a{
 /*màu hàng*/
 tr:nth-child(2n){
 	background-color: #f5f5f5;
+}
+.asc,
+.desc {
+    position: absolute;
+    top: auto;
+    left: 80%;
+    opacity: 0.3;
+}
+
+.click-sort {
+    position: relative;
+}
+tbody tr:hover {
+    background-color: #7a7b74;
+    animation: opacity 0.2s ease;
+    color: white;
+}
+
+tbody tr:hover a {
+    color: white;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    ;
+
+    to {
+        opacity: 1;
+    }
+
+    ;
 }
