@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.banner{
+	max-width: 100%;
+}
+.container-fluid{
+	max-width: 1180px;
+}
+.container{
+	max-width: 1000px;
+}
+.content-row{
+	margin-bottom: 100px;
+	max-width: 450px;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+
+body{
+	font-family: 'PlayfairDisplay-Regular', serif;
+	color: #626262;
+	
+}
+a{
+	color: #626262;
+}
+section a{
+	color: #c8c3b9;
+}
+h2>a{
+	color: #626262;
+}
+.logo{
+	font-family: 'Inconsolata-Regular', monospace;
+}
+.intro{
+	margin-top: 100px;
+	margin-bottom: 120px;	
+}
+
+.linkEmail{
+	max-width: 100%;
+	background-color: #f0f0f0; 
+	height: 300px;
+	margin-bottom: 100px;
+}
+.linkEmail-text{
+	padding-top: 70px;
+}
+.linkEmail-input{
+	padding-top: 50px;
+	padding-left: 37%;
+	padding-right: 37%;
+	width: 100%;
+}
+input[type=text] {
+	background-color: #f0f0f0;
+	max-width: 85%;
+	box-sizing: border-box;
+	border: none;
+	padding: 0;
+}
+hr{
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+}
+form button{
+	border: none;
+	background: none;
+}
+
+form {
+	display:flex;
+}
+
+.load-more button{
+	background-color: white;
+	border: 1px solid black;
+	width: 160px;
+	height: 60px;
+}
+.infor{
+	max-width: 100%;
+	background-color: #f0f0f0; 
+	height: 100px;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
