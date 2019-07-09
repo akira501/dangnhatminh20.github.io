@@ -1,0 +1,303 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Aileron', serif;
+	
+}
+/*MyCSS-Auto*/
+
+.ml-20p{
+	margin-left: 20%;
+}
+.ml-29p{
+	margin-left: 29%;
+}
+
+.ml-9p{
+	margin-left: 9%;
+}
+.ml-10p{
+	margin-left: 10%;
+}
+.ml-15p{
+	margin-left: 15%;
+}
+.ml-13p{
+	margin-left: 13%;
+}
+
+
+
+
+.mr-10p{
+	margin-right: 10%;
+}
+.mr-20p{
+	margin-right: 20%;
+}
+.mr-45p{
+	margin-right: 45%;
+}
+.mr-50p{
+	margin-right: 50%;
+}
+.mr-55p{
+	margin-right: 55%;
+}
+
+
+.mt-25{
+	margin-top: 25px;
+}
+.mt-30{
+	margin-top: 30px;
+}
+.mt-50{
+	margin-top: 50px;
+}
+.mt-75{
+	margin-top: 75px;
+}
+.mt-80{
+	margin-top: 80px;
+}
+.mt-85{
+	margin-top: 85px;
+}
+.mt-90{
+	margin-top: 90px;
+}
+.mt-100{
+	margin-top: 100px;
+}
+.mt-200{
+	margin-top: 200px;
+}
+.mt-150{
+	margin-top: 150px;
+}
+
+/*font-size & color*/
+.navbar>a{
+	font-size: 26px;
+	font-weight: bold;
+}
+.navbar ul li a{
+	font-size: 17px;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #7E8085;
+}
+.title>h1{
+	font-weight: bold;
+	color: black;
+	font-size: 48px;
+}
+.review h2{
+	font-size: 34px;
+	font-weight: bold;
+}
+.title-review p{
+	font-size: 16px;
+	color: #7E8085;
+	font-style: italic;
+}
+.nav p{
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+}
+.tab-content p{
+	color: #7E8085;
+}
+.tab-content .Italic{
+	font-style: italic;
+}
+
+.tab-content h5{
+	font-size: 15px;
+}
+
+.gray-content h5{
+	font-size: 17px;
+	font-weight: bold;
+	color: black;
+	margin-top: 30px;
+}
+
+.gray-content .built .col-lg-7 img{
+	max-width: 90%;
+}
+
+
+
+
+
+
+.title-review{
+	text-align: center;
+}
+.review img{
+	max-width: 100%;
+}
+.slide .nav{
+	margin-left: 12%;
+}
+.slide .nav-item{
+	margin-right: 10%;
+	text-align: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background-color: white;
+	border-bottom: 3px solid #2F5BEA;
+}
+
+.tab-content h2{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.tap-content p{
+	font-size: 12px;
+}
+
+
+
+.gray-content .icon>img{
+	max-width: 50%;
+}
+.gray-content .title h2{
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+}
+.gray-content .title p{
+	font-size: 16px;
+	color: #7E8085;
+	text-align: center;
+}
+.gray-content .icon{
+	text-align: center;
+}
+
+.built h2{
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.built p{
+	font-size: 16px;
+	color: #7E8085;
+}
+
+
+.block img{
+	max-width: 90%;
+}
+
+
+.logoWeb img{
+	max-width: 100%;
+}
+
+
+
+
+
+
+
+/*buttonCSS*/
+.center-nav .btn{
+	border-radius: 35px;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 55px;
+	width: 205px;
+}
+
+.btn-primary{
+	background-color: #2F5BEA;
+}
+
+.btn-light{
+	background-color: white;
+	border: 2px solid #C9CDD5;
+	color: #C9CDD5;
+}
+
+
+
+
+
+
+
+.left-img, 
+.center-nav,
+.right-img{
+	padding: 0;
+}
+
+.left-img>img{
+	position: absolute;
+	max-width: 21%;
+	top: 1.06%;
+}
+.right-img>img{
+	position: absolute;
+	max-width: 48%;
+	left: 52%;
+	top: 1%;
+}
+.logo{
+	left: 85%;
+}
+
+
+
+.navbar{
+	background-color: white !important;
+}
+
+
+.gray-content{
+	background-color: #F2F2F2;
+}
+.blue-content{
+	background-color: #2F5BEA;
+}
+
+@media screen and (max-width: 1010px) {
+  .rateStar img{
+  	max-width: 80%;
+  }
+  .title h1{
+  	font-size: 30px;
+  }
+  .center-nav .btn{
+	border-radius: 35px;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	height: 35px;
+	width: 135px;
+	}
+  .center-nav .row{
+  	max-width: 90%;
+  	}
+}
+
+@media screen and (max-width: 767px) {
+  .title h1{
+  	font-size: 20px;
+  }
+  .navbar{
+  	max-width: 50%;
+  }
+  .center-nav .row{
+  	max-width: 80%;
+  }
+}
