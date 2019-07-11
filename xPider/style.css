@@ -140,6 +140,7 @@ body{
 
 /*title*/
 .title>h1{
+	font-family: aileronbold;
 	font-weight: bold;
 	color: #2C2E30;
 	font-size: 48px;
