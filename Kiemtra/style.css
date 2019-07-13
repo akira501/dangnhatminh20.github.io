@@ -18,15 +18,9 @@ html{
 }
 
 
-body{
-	background-color: #F2F2F2;
-}
-
-
-
 
 .bg-light {
-    background-color: #F2F2F2!important;
+    background-color: #ffffff!important;
 }
 
 .header .menu{
@@ -41,6 +35,9 @@ body{
 .navbar-light .nav-home-page .nav-link{
 	color: var(--orange-color);
 }
+.nav-link-home{
+	display: none;
+}
 .nav-item{
 	padding: 2.5rem;
 }
@@ -52,8 +49,8 @@ body{
 .btn_menu{
 	padding: 3rem;
 	position: absolute;
-	top: 0rem;
-	left: 110rem;
+	top: 0%;
+	left: 80%;
 }
 
 .apply{
@@ -181,8 +178,8 @@ body{
 }
 
 .step{
-	border: 2px solid #EFEFEF;
-	box-shadow: 2px 2px 2px 4px #EFEFEF;
+	border: 2px solid #f3f3f3;
+	box-shadow: 2px 2px 2px 4px #f3f3f3;
 	border-radius: 1rem;
 	width: 23rem;
 	height: 25rem;
@@ -238,6 +235,7 @@ body{
 .content_blandit_select{
 	font-family: latoregular;
 	font-size: 2.4rem;
+	color: var(--white-color)
 }
 
 .blandit_logo{
@@ -333,16 +331,16 @@ img{max-width: 100%;}
 	font-family: latoregular;
 	font-size: 1.6rem;
 }
-/*.upload{
-	border: 2px solid #EFEFEF;
-	border-radius: 1rem;
+.upload{
+	border: 1px solid #ced4da;
+	border-radius: 0.5rem;
 	
 	background-color: #FDFDFD;
 	text-align: center;
-	padding-left: 30rem;
-	padding-right: 30rem;
-}*/
-/*.upload_text{
+	padding-left: 20%;
+	padding-right: 20%;
+}
+.upload_text{
 	font-family: latoregular;
 	font-size: 1.8rem;
 	color: var(--gray-color);
@@ -350,7 +348,21 @@ img{max-width: 100%;}
 .upload_link{
 	font-family: latobold;
 	font-size: 2rem;
-}*/
+}
+.upload_link_text{
+	color: var(--blue-color);
+}
+.upload_link_text:hover{
+	text-decoration: none;
+}
+hr{
+	color: var(--blue-color);
+	height: 2px;
+}
+.form-control{
+	padding: 1.6rem 1rem;
+	margin: 0.5rem;
+}
 /*Footer*/
 .footer{
 	margin-top: 20rem;
@@ -380,11 +392,56 @@ img{max-width: 100%;}
 .scroll_down:hover p,i{
 	cursor: pointer;
 }
-
-@media only screen and (max-width: 1179px){
-  
+button{
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+  	cursor: pointer;
+}
+button:hover {
+  background-color: var(--orange-color);
+  box-shadow: 0px 15px 20px #f3d3b8;
+  color: #fff;
+  transform: translateY(-7px);
 }
 
+header::before{
+	content: "";
+	background-image: url(images/anh2.png);
+	background-repeat: no-repeat;
+	width: 70rem;
+	height: 58rem;
+	max-width: 100%;
+	position: absolute;
+	top: 90%;
+	left: 0%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1179px){
+  	.nav-home-page{
+  		display: none;
+  	}
+  	.nav_home{
+  		padding: 1rem;
+  		text-align: center;
+  		}
+  	.nav-link-home{
+  		display: block;
+  		font-family: sf_pro_displayregular;
+		font-size: 2rem;
+		color: #eb5b49 !important;
+  	}
+  	.nav-item{
+  		padding: 0.2rem;
+  	}
+  	.header .text_main{
+  		padding-top: 2rem;
+  	}
+}
 @media screen and (max-width: 1365px){
 	.btn_menu{
 		padding: 3rem;
@@ -424,7 +481,7 @@ img{max-width: 100%;}
 		font-size: 5rem;
 		text-align: center;
 		color: var(--blue-color);
-		padding-top: 15rem;
+		padding-top: 2rem;
 	}
 	body{
 		text-align: center!important;
