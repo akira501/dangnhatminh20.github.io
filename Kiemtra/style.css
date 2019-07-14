@@ -405,6 +405,7 @@ hr{
 	border-radius: 0;
 	-webkit-appearance: none;
 	overflow: hidden;
+	cursor: pointer;
 }
 .col_content option{
 	background-color: var(--blue-color);
