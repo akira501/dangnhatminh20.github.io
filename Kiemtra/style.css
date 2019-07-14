@@ -383,6 +383,11 @@ hr{
 .footer_content{
 	padding-left: 5rem;
 	padding-right: 5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+:focus {
+	outline: -webkit-focus-ring-color auto 0px;
 }
 .col_content{
 	text-align: center;
@@ -394,12 +399,12 @@ hr{
 .col_content select{
 	color: var(--white-color);
 	background: url(images/Chevron.png) no-repeat right transparent;
-   	font-size: 1.4rem;
-   	width: 8rem;
-   	border: 0;
-   	border-radius: 0;
-   	-webkit-appearance: none;
-   	
+	font-size: 1.4rem;
+	width: 8rem;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	overflow: hidden;
 }
 .col_content option{
 	background-color: var(--blue-color);
@@ -678,6 +683,9 @@ hr{
 }
 
 @media screen and (max-width: 575px){
+	:focus {
+		outline: -webkit-focus-ring-color auto 0px;
+	}
 	.container-fluid{
 		padding: 0;
 	}
@@ -685,7 +693,7 @@ hr{
 		padding: 0;
 	}
 	.bg-light {
-    	background-color: #eb5b49!important;
+		background-color: #eb5b49!important;
 	}
 	.nav-link-home{
 		color: white !important;
