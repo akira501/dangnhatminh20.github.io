@@ -232,6 +232,7 @@ html{
 .title_blandit_select{
 	font-family: latoblack;
 	font-size: 6.4rem;
+	cursor: pointer;
 }
 
 .content_blandit_select{
@@ -268,6 +269,9 @@ img{max-width: 100%;}
 .card-right{
 	padding: 1rem;
 	padding-left: 8rem;
+}
+.card{
+	cursor: pointer;
 }
 .avatar{
 	border-radius: 50%;
