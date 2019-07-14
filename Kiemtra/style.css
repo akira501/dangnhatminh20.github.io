@@ -391,6 +391,19 @@ hr{
 .col_content a{
 	color: var(--white-color);
 }
+.col_content select{
+	color: var(--white-color);
+	background: url(images/Chevron.png) no-repeat right transparent;
+   	font-size: 1.4rem;
+   	width: 8rem;
+   	border: 0;
+   	border-radius: 0;
+   	-webkit-appearance: none;
+   	
+}
+.col_content option{
+	background-color: var(--blue-color);
+}
 .pt-5r{
 	padding-top: 5rem;
 }
@@ -401,6 +414,12 @@ hr{
 .scroll_down:hover p,i{
 	cursor: pointer;
 }
+
+
+
+
+
+
 .btn_menu button{
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	transition: all 0.3s ease 0s;
