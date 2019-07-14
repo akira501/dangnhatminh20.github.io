@@ -251,7 +251,7 @@ img{max-width: 100%;}
 }
 
 .card-body{
-	height: 8rem;
+	height: 8.5rem;
 }
 .card-title{
 	font-family: latoregular;
@@ -691,7 +691,7 @@ hr{
 		padding-top: 2rem;
 	}
 	.card-body{
-		height: 8rem;
+		height: 8.5rem;
 	}
 	.card-title{
 		font-family: latoregular;
