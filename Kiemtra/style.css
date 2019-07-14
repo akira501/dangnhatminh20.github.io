@@ -341,7 +341,7 @@ img{max-width: 100%;}
 .upload{
 	border: 1px solid #ced4da;
 	border-radius: 0.5rem;
-	
+	cursor: pointer;
 	background-color: #FDFDFD;
 	text-align: center;
 	padding-left: 20%;
