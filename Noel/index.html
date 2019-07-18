@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>MerryXmas</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <iframe src="music/minh.mp3" allow="autoplay" style="display:none" id="iframeAudio"> </iframe>
+    <audio controls loop autoplay="true">
+        <source src="music/Santa-Claus-Sound-Effect.mp3" type="audio/mpeg">
+    </audio>
     <div class="santa_l">
         <img class="santa" src="img/santa.png"/>
     </div>
@@ -43,6 +47,10 @@
         <div class="qua10">
             <img src="img/qua3.png"/>
         </div>
+    </div>
+
+    <div class="btn_gift">
+        <button onclick="window.location.href='gift.html'">open now!</button>
     </div>
     <!-- copy snow -->
     <div class="winter-is-coming">
