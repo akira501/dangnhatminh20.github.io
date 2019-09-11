@@ -1,0 +1,124 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Yummy Restaurant
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  // fontAweSome
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  // icon
+  link(rel='icon' href='images/favicon.ico')
+  // Fonts
+  link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
+  link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
+  // My css
+  link(rel='stylesheet' type='text/css' media='screen' href='css/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/singerProduct.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer.css')
+header.header_area.container-fluid
+  //Top Header Area
+  include template-parts/topHeader.pug
+  // Menu
+  include template-parts/mainMenu.pug
+
+//section1
+section.section_1.container-fluid
+  .product_area
+    .main_product.row
+      .col-6.image_area
+        .image_main
+          img(src="./images/singerProduct_Page/food1.png", alt="")
+        .sub_image.row 
+          .col-4.sub_product 
+            img(src="./images/singerProduct_Page/food1.png", alt="")
+          .col-4.sub_product 
+            img(src="./images/singerProduct_Page/food1.png", alt="")
+          .col-4.sub_product 
+            img(src="./images/singerProduct_Page/food1.png", alt="")
+      .col-6.product_content_area
+        .sub_menu HOME > THỊT > BÍT TẾT BÒ KOBE
+        p.name_product Bít Tết Bò Kobe
+        p.price_product 50.000 vnd
+        p.sub_product Morbi ut arcu dolor. Maecenas id nulla nec nibh viverra vehicula. Cras feugiat, corper. lla vehicula, lacus ut suscipit fermentum, turpis felis ultricies dui, magna eu lacinia ullamcorper. lla vehicula, lacus ut suscipit fermentum, turpis felis ultricies dui.
+        hr
+        p.ingredients Thành phần chính: 
+          p.igd - Dứa gai
+          p.igd - Kiwi
+          p.igd - Hạt điều
+        hr
+section.section_2.container
+  .comment BÌNH LUẬN
+  hr
+  .row 
+    .col-2.avatar_comter
+      img(src="", alt="") 
+    .col-10.form_comment
+      .vote
+      .name_comment Sơn Tùng M-TP
+      .date_comment 8/8/2019
+      .content_comment Vivamus orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique. Orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique.
+
+  hr
+  .post_comment Để lại đánh giá của bạn
+    .row
+      .col-6.form-group
+        label(for='') Tên
+        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email')
+      .col-6.form-group
+        label(for='') Email
+        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email')
+    .form-group
+      label(for='') Bình luận của bạn
+      textarea#exampleFormControlTextarea1.form-control(rows='3')
+    .text-right
+      button.btn(type='submit') Hoàn thành
+
+section.section_3.container
+  .title SẢN PHẨM LIÊN QUAN
+  hr
+  .card-deck
+    .card
+      img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+      .card-body
+        p.card-text.name.text-center
+          | Bánh matcha & việt quất
+        p.card-text.tag.text-center
+          small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+          hr
+        p.card-text.price.text-center
+          | 50.000 VND
+    .card
+      img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+      .card-body
+        p.card-text.name.text-center
+          | Bánh matcha & việt quất
+        p.card-text.tag.text-center
+          small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+          hr
+        p.card-text.price.text-center
+          | 50.000 VND
+    .card
+      img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+      .card-body
+        p.card-text.name.text-center
+          | Bánh matcha & việt quất
+        p.card-text.tag.text-center
+          small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+          hr
+        p.card-text.price.text-center
+          | 50.000 VND
+
+
+//footer
+include template-parts/footer.pug
+
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(type='text/javascript' src='js/script.js')
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')

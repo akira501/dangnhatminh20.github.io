@@ -1,0 +1,176 @@
+footer.container-fuild
+    .top_footer
+        div
+            p ẢNH TRÊN INSTAGRAM
+            hr
+        .container-fluid
+            #carouselExample.carousel.slide(data-ride='carousel' data-interval='9000')
+                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                    .carousel-item.col-md-3.active
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 1')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=1' alt='slide 1')
+                    .carousel-item.col-md-3
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 3')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=2' alt='slide 2')
+                    .carousel-item.col-md-3
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 4')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=3' alt='slide 3')
+                    .carousel-item.col-md-3
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 5')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=4' alt='slide 4')
+                    .carousel-item.col-md-3
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 6')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=5' alt='slide 5')
+                    .carousel-item.col-md-3
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 7')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=6' alt='slide 6')
+                    .carousel-item.col-md-3
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 8')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=7' alt='slide 7')
+                    .carousel-item.col-md-3
+                        .panel.panel-default
+                        .panel-thumbnail
+                            a.thumb(href='#' title='image 2')
+                            img.img-fluid.mx-auto.d-block(src='//via.placeholder.com/600x400?text=8' alt='slide 8')
+                a.carousel-control-prev(href='#carouselExample' role='button' data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                a.carousel-control-next.text-faded(href='#carouselExample' role='button' data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+.container.my-4
+  p.font-weight-bold
+    | Bootstrap carousel multiple items is an improved version of the standard bootstrap
+    | carousel which allows you to put inside more than one element.
+  p
+    strong
+      | Detailed documentation and more examples of Bootstrap grid you can find in our 
+      a(href='https://mdbootstrap.com/docs/jquery/javascript/carousel/' target='_blank') Bootstrap Carousel Docs
+      | .
+  hr.my-4
+  // Carousel Wrapper
+  #multi-item-example.carousel.slide.carousel-multi-item(data-ride='carousel')
+    // Controls
+    .controls-top
+      a.btn-floating(href='#multi-item-example' data-slide='prev')
+        i.fa.fa-chevron-left
+      a.btn-floating(href='#multi-item-example' data-slide='next')
+        i.fa.fa-chevron-right
+    // /.Controls
+    // Indicators
+    ol.carousel-indicators
+      li.active(data-target='#multi-item-example' data-slide-to='0')
+      li(data-target='#multi-item-example' data-slide-to='1')
+      li(data-target='#multi-item-example' data-slide-to='2')
+    // /.Indicators
+    // Slides
+    .carousel-inner(role='listbox')
+      // First slide
+      .carousel-item.active
+        .row
+          .col-md-4
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+          .col-md-4.clearfix.d-none.d-md-block
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+          .col-md-4.clearfix.d-none.d-md-block
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+      // /.First slide
+      // Second slide
+      .carousel-item
+        .row
+          .col-md-4
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+          .col-md-4.clearfix.d-none.d-md-block
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+          .col-md-4.clearfix.d-none.d-md-block
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+      // /.Second slide
+      // Third slide
+      .carousel-item
+        .row
+          .col-md-4
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+          .col-md-4.clearfix.d-none.d-md-block
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+          .col-md-4.clearfix.d-none.d-md-block
+            .card.mb-2
+              img.card-img-top(src='https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg' alt='Card image cap')
+              .card-body
+                h4.card-title Card title
+                p.card-text
+                  | Some quick example text to build on the card title and make up the bulk of the
+                  | card&apos;s content.
+                a.btn.btn-primary Button
+      // /.Third slide
+    // /.Slides
+  // /.Carousel Wrapper

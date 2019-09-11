@@ -1,0 +1,127 @@
+/*------------Header-----------*/
+/* Banner */
+.header_area {
+    background-image: url("../images/singerProduct_Page/banner.png");
+    height: 21.6rem; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+/* section 1 */
+.sub_product img{
+    width: 12rem;
+}
+.product_area{
+    padding: 10rem;
+}
+.main_product .image_area .sub_image{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phần bên phải */
+.product_content_area{
+    padding-left: 5rem;
+}
+.product_content_area .sub_menu{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+.product_content_area .name_product{
+    font-family: 'Prata', serif;
+    font-size: 3.6rem;
+}
+.product_content_area .price_product{
+    font-family: 'Prata', serif;
+    font-size: 2.4rem;
+    color: #FD5B00;
+}
+.product_content_area .sub_product{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.ingredients{
+    font-family: 'Prata', serif;
+    font-size: 2.4rem;
+}
+.igd{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+/* section 2 */
+.comment{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    padding-top: 5rem;
+}
+
+.name_comment{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: #FD5B00;
+}
+.date_comment{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+.content_comment{
+    padding-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+
+.post_comment{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.post_comment .form-group label{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.4rem !important;
+}
+
+/* section 3 */
+.section_3 .title{
+    font-family: 'Prata', serif;
+    font-size: 1.8rem;
+}
+.card-deck{
+    padding-bottom: 5rem;
+}
+.card{
+    border: none;
+}
+.card .name{
+    font-family: 'Prata', serif;
+    font-size: 2.4rem;
+}
+.card .tag{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+.card .price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    color: #FD5B00;
+}
