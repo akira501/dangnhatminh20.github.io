@@ -131,8 +131,8 @@
   }
   
   .location-title {
-    font-size: 1.5em;
-    font-weight: bold;
+    color: #ffffff !important;
+    font-family: 'Prata', serif;
     text-decoration: none;
     z-index: 1;
     position: absolute;
