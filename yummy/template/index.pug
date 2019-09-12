@@ -37,14 +37,36 @@ section.section_1.chefs_info.container-fluid.row
         h1.chef_heading 
           | Đầu bếp 
           span(style='color:black;') của chúng tôi
-            
-        .chef_content.row
-          .col-4.avatar_chef
-            img(src='images/home_Page/chef_small.png', alt='chef')
-          .col-8.name_chef
-            p.name Kano Kun
-            p.role Bếp trưởng
-        p.content Với 20 năm kinh nghiệm của mình ở các nước trên toàn thế giới, tôi sẽ mang tới những hương vị tuyệt vời nhất cho bạn!    
+      #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+          li(data-target='#carouselExampleIndicators' data-slide-to='1')
+          li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            .chef_content.row
+              .col-4.avatar_chef
+                img(src='images/home_Page/chef_small.png', alt='chef')
+              .col-8.name_chef
+                p.name Kano Kun
+                p.role Bếp trưởng
+            p.content Với 20 năm kinh nghiệm của mình ở các nước trên toàn thế giới, tôi sẽ mang tới những hương vị tuyệt vời nhất cho bạn!   
+          .carousel-item
+            .chef_content.row
+              .col-4.avatar_chef
+                img(src='images/home_Page/chef_small.png', alt='chef')
+              .col-8.name_chef
+                p.name Kano Kun
+                p.role Bếp trưởng
+            p.content Với 20 năm kinh nghiệm của mình ở các nước trên toàn thế giới, tôi sẽ mang tới những hương vị tuyệt vời nhất cho bạn!
+          .carousel-item
+            .chef_content.row
+              .col-4.avatar_chef
+                img(src='images/home_Page/chef_small.png', alt='chef')
+              .col-8.name_chef
+                p.name Kano Kun
+                p.role Bếp trưởng
+            p.content Với 20 năm kinh nghiệm của mình ở các nước trên toàn thế giới, tôi sẽ mang tới những hương vị tuyệt vời nhất cho bạn!        
     .col-6.chef_image
       img(src='images/home_Page/chef_big.png', alt='chef')
 //section2      

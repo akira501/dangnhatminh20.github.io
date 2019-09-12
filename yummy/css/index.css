@@ -59,6 +59,13 @@
     object-fit: cover;
 }
 
+/* Chỉnh slide Bootstrap 4 */
+.carousel-indicators{
+    bottom: -10rem;
+}
+.carousel-indicators li{
+    background-color: #222023;
+}
 /* Section2 */
 .section_2{
     background-color: #222023;
