@@ -4,7 +4,7 @@ head
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   title Yummy Restaurant
   meta(name='viewport' content='width=device-width, initial-scale=1')
-  
+
   // Bootstrap CSS
   link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
   // fontAweSome
@@ -36,82 +36,93 @@ header.header_area.container-fluid
 
 //section1
 section.section_1.container-fluid
-    .set_food
-        .row.set_food_area
-            .col-6.image_set 
-                img(src="./images/shop_Page/set1.jpg", alt="")
-            .col-6.set_content
-                div.text_content
-                    p.set_price.text-center 199.000 vnd
-                    hr
-                    p.set_name.text-center COMBO TÌNH YÊU
-                    p.sub_set.text-center 2 bánh mỳ, 2 set trái cây 4 mùa, 2 trà trái cây
+  .set_food
+    .row.set_food_area
+      .col-6.image_set 
+        img(src="./images/shop_Page/set1.jpg", alt="")
+      .col-6.set_content
+        div.text_content
+          p.set_price.text-center 199.000 vnd
+          hr
+          p.set_name.text-center COMBO TÌNH YÊU
+          p.sub_set.text-center 2 bánh mỳ, 2 set trái cây 4 mùa, 2 trà trái cây
 
 section.section_2.container-fluid
-    .card_main
-        .card-deck
-            .card
-                img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-                .card-body
-                    p.card-text.name.text-center
-                        | Bánh matcha & việt quất
-                    p.card-text.tag.text-center
-                        small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-                        hr
-                    p.card-text.price.text-center
-                        | 50.000 VND
-            .card
-                img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-                .card-body
-                    p.card-text.name.text-center
-                        | Bánh matcha & việt quất
-                    p.card-text.tag.text-center
-                        small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-                        hr
-                    p.card-text.price.text-center
-                        | 50.000 VND
-            .card
-                img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-                .card-body
-                    p.card-text.name.text-center
-                        | Bánh matcha & việt quất
-                    p.card-text.tag.text-center
-                        small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-                        hr
-                    p.card-text.price.text-center
-                        | 50.000 VND
-        .card-deck
-            .card
-                img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-                .card-body
-                    p.card-text.name.text-center
-                        | Bánh matcha & việt quất
-                    p.card-text.tag.text-center
-                        small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-                        hr
-                    p.card-text.price.text-center
-                        | 50.000 VND
-            .card
-                img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-                .card-body
-                    p.card-text.name.text-center
-                        | Bánh matcha & việt quất
-                    p.card-text.tag.text-center
-                        small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-                        hr
-                    p.card-text.price.text-center
-                        | 50.000 VND
-            .card
-                img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-                .card-body
-                    p.card-text.name.text-center
-                        | Bánh matcha & việt quất
-                    p.card-text.tag.text-center
-                        small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-                        hr
-                    p.card-text.price.text-center
-                        | 50.000 VND
-        
+
+  .top_section_2
+    .row.top_area
+        .dropdown
+            button#dropdownMenuButton.btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Tất cả các món
+            .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                a.dropdown-item(href='#') Món tráng miệng
+                a.dropdown-item(href='#') Món chính   
+        .search.ml-auto
+            input#myInput.form-control(type='text' placeholder='Tìm kiếm..')       
+  .card_main
+    .card-deck
+      .card
+        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+        .card-body
+          p.card-text.name.text-center
+            | Bánh matcha & việt quất
+          p.card-text.tag.text-center
+            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+      .card
+        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+        .card-body
+          p.card-text.name.text-center
+            | Bánh matcha & việt quất
+          p.card-text.tag.text-center
+            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+      .card
+        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+        .card-body
+          p.card-text.name.text-center
+            | Bánh matcha & việt quất
+          p.card-text.tag.text-center
+            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+    .card-deck
+      .card
+        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+        .card-body
+          p.card-text.name.text-center
+            | Bánh matcha & việt quất
+          p.card-text.tag.text-center
+            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+      .card
+        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+        .card-body
+          p.card-text.name.text-center
+            | Bánh matcha & việt quất
+          p.card-text.tag.text-center
+            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+      .card
+        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+        .card-body
+          p.card-text.name.text-center
+            | Bánh matcha & việt quất
+          p.card-text.tag.text-center
+            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+
 
 
 
