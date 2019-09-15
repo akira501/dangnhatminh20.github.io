@@ -2,7 +2,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  title Yummy Restaurant
+  title Yummy Restaurant - Cửa hàng
   meta(name='viewport' content='width=device-width, initial-scale=1')
 
   // Bootstrap CSS
@@ -14,7 +14,7 @@ head
   // Add the new slick-theme.css if you want the default styling
   link(rel='stylesheet' type='text/css' href='js/slick/slick-theme.css')
   // icon
-  link(rel='icon' href='images/favicon.ico')
+  link(rel='icon' href='images/core_img/favicon.ico')
   // Fonts
   link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
   link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
@@ -51,78 +51,152 @@ section.section_2.container-fluid
 
   .top_section_2
     .row.top_area
-        .dropdown
-            button#dropdownMenuButton.btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                | Tất cả các món
-            .dropdown-menu(aria-labelledby='dropdownMenuButton')
-                a.dropdown-item(href='#') Món tráng miệng
-                a.dropdown-item(href='#') Món chính   
-        .search.ml-auto
-            input#myInput.form-control(type='text' placeholder='Tìm kiếm..')       
+      .dropdown
+        button#dropdownMenuButton.btn.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          | Tất cả các món
+        .dropdown-menu(aria-labelledby='dropdownMenuButton')
+          a.dropdown-item(href='#') Món tráng miệng
+          a.dropdown-item(href='#') Món chính   
+      .search.ml-auto
+        input#myInput.form-control(type='text' placeholder='Tìm kiếm..')       
   .card_main
-    .card-deck
-      .card
-        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-        .card-body
-          p.card-text.name.text-center
-            | Bánh matcha & việt quất
-          p.card-text.tag.text-center
-            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-            hr
-          p.card-text.price.text-center
-            | 50.000 VND
-      .card
-        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-        .card-body
-          p.card-text.name.text-center
-            | Bánh matcha & việt quất
-          p.card-text.tag.text-center
-            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-            hr
-          p.card-text.price.text-center
-            | 50.000 VND
-      .card
-        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-        .card-body
-          p.card-text.name.text-center
-            | Bánh matcha & việt quất
-          p.card-text.tag.text-center
-            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-            hr
-          p.card-text.price.text-center
-            | 50.000 VND
-    .card-deck
-      .card
-        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-        .card-body
-          p.card-text.name.text-center
-            | Bánh matcha & việt quất
-          p.card-text.tag.text-center
-            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-            hr
-          p.card-text.price.text-center
-            | 50.000 VND
-      .card
-        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-        .card-body
-          p.card-text.name.text-center
-            | Bánh matcha & việt quất
-          p.card-text.tag.text-center
-            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-            hr
-          p.card-text.price.text-center
-            | 50.000 VND
-      .card
-        img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-        .card-body
-          p.card-text.name.text-center
-            | Bánh matcha & việt quất
-          p.card-text.tag.text-center
-            small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-            hr
-          p.card-text.price.text-center
-            | 50.000 VND
-
+    .card-deck.row
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp5.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp1.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp3.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp4.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp6.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp7.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp8.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
+          .card-body
+            .text-center
+              a(href='cart.html').card-text.name
+                | Bít Tết Bò Kobe
+            p.card-text.tag.text-center
+              small.text-muted Món chính
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
 
 
 

@@ -8,8 +8,12 @@ head
   link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
   // fontAweSome
   link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
+  //slick
+  link(rel='stylesheet' type='text/css' href='js/slick/slick.css')
+  // Add the new slick-theme.css if you want the default styling
+  link(rel='stylesheet' type='text/css' href='js/slick/slick-theme.css')
   // icon
-  link(rel='icon' href='images/favicon.ico')
+  link(rel='icon' href='images/core_img/favicon.ico')
   // Fonts
   link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
   link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
@@ -18,7 +22,7 @@ head
   link(rel='stylesheet' type='text/css' media='screen' href='css/singerProduct.css')
   link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
   link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
-  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer2.css')
 header.header_area.container-fluid
   //Top Header Area
   include template-parts/topHeader.pug
@@ -80,45 +84,66 @@ section.section_2.container
 section.section_3.container
   .title SẢN PHẨM LIÊN QUAN
   hr
-  .card-deck
-    .card
-      img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-      .card-body
-        p.card-text.name.text-center
-          | Bánh matcha & việt quất
-        p.card-text.tag.text-center
-          small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-          hr
-        p.card-text.price.text-center
-          | 50.000 VND
-    .card
-      img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-      .card-body
-        p.card-text.name.text-center
-          | Bánh matcha & việt quất
-        p.card-text.tag.text-center
-          small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-          hr
-        p.card-text.price.text-center
-          | 50.000 VND
-    .card
-      img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-      .card-body
-        p.card-text.name.text-center
-          | Bánh matcha & việt quất
-        p.card-text.tag.text-center
-          small.text-muted BÁNH NGỌT, ĐỒ UỐNG
-          hr
-        p.card-text.price.text-center
-          | 50.000 VND
+  .card-deck.row
+      .col-3       
+        .card
+          img.card-img-top(src='./images/shop_Page/sp1.jpg' alt='Card image cap')
+          .card-body
+            p.card-text.name.text-center
+              | Bánh matcha & việt quất
+            p.card-text.tag.text-center
+              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+          .card-body
+            p.card-text.name.text-center
+              | Bánh matcha & việt quất
+            p.card-text.tag.text-center
+              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          img.card-img-top(src='./images/shop_Page/sp3.jpg' alt='Card image cap')
+          .card-body
+            p.card-text.name.text-center
+              | Bánh matcha & việt quất
+            p.card-text.tag.text-center
+              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
+      .col-3       
+        .card
+          img.card-img-top(src='./images/shop_Page/sp4.jpg' alt='Card image cap')
+          .card-body
+            p.card-text.name.text-center
+              | Bánh matcha & việt quất
+            p.card-text.tag.text-center
+              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              hr
+            p.card-text.price.text-center
+              | 50.000 VND
 
 
 //footer
-include template-parts/footer.pug
+include template-parts/footer2.pug
 
 // Optional JavaScript
 // jQuery first, then Popper.js, then Bootstrap JS
-script(type='text/javascript' src='js/script.js')
+script(src='//code.jquery.com/jquery-1.11.1.min.js')
 script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
 script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+
+
+// slick
+script(type='text/javascript' src='js/slick/slick.min.js')
+
+script(type='text/javascript' src='js/script.js')
+script(type='text/javascript' src='./js/footer2.js')
