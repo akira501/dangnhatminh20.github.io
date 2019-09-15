@@ -34,15 +34,28 @@ section.section_1.container-fluid
   .product_area
     .main_product.row
       .col-6.image_area
-        .image_main
-          img(src="./images/singerProduct_Page/food1.png", alt="")
-        .sub_image.row 
-          .col-4.sub_product 
-            img(src="./images/singerProduct_Page/food1.png", alt="")
-          .col-4.sub_product 
-            img(src="./images/singerProduct_Page/food1.png", alt="")
-          .col-4.sub_product 
-            img(src="./images/singerProduct_Page/food1.png", alt="")
+        .slider-for
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp5.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp1.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp2.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp3.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp4.jpeg' alt='Xem chi tiết')
+        .slider-nav
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp5.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp1.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp2.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp3.jpg' alt='Xem chi tiết')
+          div
+            img(width='300' height='169' src='images/singerProduct_Page/sp4.jpeg' alt='Xem chi tiết')
       .col-6.product_content_area
         .sub_menu HOME > THỊT > BÍT TẾT BÒ KOBE
         p.name_product Bít Tết Bò Kobe
@@ -87,45 +100,69 @@ section.section_3.container
   .card-deck.row
       .col-3       
         .card
-          img.card-img-top(src='./images/shop_Page/sp1.jpg' alt='Card image cap')
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp5.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
           .card-body
-            p.card-text.name.text-center
-              | Bánh matcha & việt quất
+            .text-center
+              a(href='singerProduct.html').card-text.name
+                | Bít Tết Bò Kobe
             p.card-text.tag.text-center
-              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              small.text-muted Món chính
               hr
             p.card-text.price.text-center
               | 50.000 VND
       .col-3       
         .card
-          img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp1.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
           .card-body
-            p.card-text.name.text-center
-              | Bánh matcha & việt quất
+            .text-center
+              a(href='singerProduct.html').card-text.name
+                | Bít Tết Bò Kobe
             p.card-text.tag.text-center
-              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              small.text-muted Món chính
               hr
             p.card-text.price.text-center
               | 50.000 VND
       .col-3       
         .card
-          img.card-img-top(src='./images/shop_Page/sp3.jpg' alt='Card image cap')
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
           .card-body
-            p.card-text.name.text-center
-              | Bánh matcha & việt quất
+            .text-center
+              a(href='singerProduct.html').card-text.name
+                | Bít Tết Bò Kobe
             p.card-text.tag.text-center
-              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              small.text-muted Món chính
               hr
             p.card-text.price.text-center
               | 50.000 VND
       .col-3       
         .card
-          img.card-img-top(src='./images/shop_Page/sp4.jpg' alt='Card image cap')
+          .hover_area
+            img.card-img-top(src='./images/shop_Page/sp3.jpg' alt='Card image cap')
+            .hover_card
+              a(href='cart.html') <i class="fas fa-cart-plus"></i>
+              a(href='cart.html') <i class="fas fa-expand"></i>
+              a(href='cart.html') <i class="fas fa-heart"></i>
           .card-body
-            p.card-text.name.text-center
-              | Bánh matcha & việt quất
+            .text-center
+              a(href='singerProduct.html').card-text.name
+                | Bít Tết Bò Kobe
             p.card-text.tag.text-center
-              small.text-muted BÁNH NGỌT, ĐỒ UỐNG
+              small.text-muted Món chính
               hr
             p.card-text.price.text-center
               | 50.000 VND

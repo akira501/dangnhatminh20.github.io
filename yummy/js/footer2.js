@@ -23,10 +23,9 @@ $(document).ready(function(){
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        dots: true,
         centerMode: true,
         focusOnSelect: true
       });
