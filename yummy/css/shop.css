@@ -181,3 +181,18 @@
       filter: blur(2px);
     }
   }
+
+
+/* Phân trang */
+.pagination_area{
+    padding-left: 40%;
+    color: #000;
+}
+.pagination_area .page-item{
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+}
+.pagination_area .page-item a{
+    color: #000;
+}
