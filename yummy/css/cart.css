@@ -147,3 +147,38 @@ th, td{
 
 
 /* nhập mã giảm giá */
+
+/* btn và form */
+/* .form-group label{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+.form-group input{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    border-width: 0 0 1px; 
+}
+textarea{
+    outline: 0;
+    border-width: 0 0 1px;
+    
+}
+textarea.form-control{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+
+.form-group .form-control:focus{
+    outline: 0;
+    border-width: 0 0 1px;
+    box-shadow: none; 
+} */
+.btn{
+    background-color: #FD5B00;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}

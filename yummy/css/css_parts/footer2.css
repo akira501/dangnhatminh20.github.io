@@ -6,9 +6,10 @@
     width: 100%; /* need to overwrite inline dimensions */
     height: auto;
   }
-  h2 {
-    margin-bottom: .5em;
-  }
+h1{
+  padding-top: 2rem;
+}
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -102,14 +103,14 @@
     padding: 5rem 10rem 5rem 0rem;
     color: #ffffff;
 }
-.network a{
+.main_footer .network a{
     padding-left: 2rem;
     color: #ffffff;
 }
-.network a:hover{
+.main_footer .network a:hover{
     color: #FD5B00;
 }
-.make_by{
+.main_footer .make_by{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }

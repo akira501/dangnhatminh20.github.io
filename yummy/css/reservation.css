@@ -32,6 +32,7 @@
     color: #ffffff;
 }
 .section_1 .content_main{
+    text-align: justify;
     padding-left: 9rem;
     padding-right: 9rem;
     padding-bottom: 10rem; 
@@ -47,6 +48,7 @@
 /* section 2 */
 .form_reservation{
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .form_reservation .form_title{
     font-family: 'Prata', serif;
@@ -72,6 +74,40 @@
     background-color: #FD5B00;
     font-size: 2.4rem;
     font-family: 'Poppins', sans-serif; 
+}
+
+.form-group label{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+.form-group input{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    border-width: 0 0 1px; 
+}
+textarea{
+    outline: 0;
+    border-width: 0 0 1px;
+    
+}
+textarea.form-control{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+
+.form-group .form-control:focus{
+    outline: 0;
+    border-width: 0 0 1px;
+    box-shadow: none; 
+}
+.btn{
+    background-color: #FD5B00;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 2rem;
 }
 /* section 3 */
 .section_3{

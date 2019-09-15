@@ -10,6 +10,10 @@ head
   link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous')
   // icon
   link(rel='icon' href='images/core_img/favicon.ico')
+  //slick
+  link(rel='stylesheet' type='text/css' href='js/slick/slick.css')
+  // Add the new slick-theme.css if you want the default styling
+  link(rel='stylesheet' type='text/css' href='js/slick/slick-theme.css')
   // Fonts
   link(rel='stylesheet' type='text/css' media='screen' href='css/stylesheet.css')
   link(href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&display=swap" rel="stylesheet")
@@ -19,7 +23,7 @@ head
   link(rel='stylesheet' type='text/css' media='screen' href='css/blog.css')
   link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/topHeader.css')
   link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/mainMenu.css')
-  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='css/css_parts/footer2.css')
 header.header_area.container-fluid
   //Top Header Area
   include template-parts/topHeader.pug
@@ -37,15 +41,15 @@ header.header_area.container-fluid
     #navbarNavDropdown.collapse.navbar-collapse
       ul.navbar-nav
         li.nav-item
-          a.nav-link(href='#') TẤT CẢ BÀI VIẾT
+          a.nav-link(href='#') TẤT CẢ BÀI VIẾT &nbsp&nbsp&nbsp&nbsp&nbsp
         li.nav-item
-          a.nav-link(href='#') KHÁM PHÁ ẨM THỰC
+          a.nav-link(href='#') KHÁM PHÁ ẨM THỰC &nbsp&nbsp&nbsp&nbsp&nbsp
         li.nav-item
-          a.nav-link(href='#') CÔNG THỨC NẤU ĂN
-      // Search form
-      form.form-inline
-        .md-form.my-0
-          input.form-control.mr-sm-2(type='text' placeholder='Tìm kiếm' aria-label='Search')
+          a.nav-link(href='#') CÔNG THỨC NẤU ĂN &nbsp&nbsp&nbsp&nbsp&nbsp
+        li
+          form.form-inline
+            input.search-box.form-control(type='text' placeholder="Tìm kiếm" aria-describedby='basic-addon2')
+
 
 //section1
 section.section_1.container-fluid
@@ -74,11 +78,15 @@ section.section_1.container-fluid
     button.btn(type='button') Xem thêm
 
 //footer
-include template-parts/footer.pug
+include template-parts/footer2.pug
 
 // Optional JavaScript
 // jQuery first, then Popper.js, then Bootstrap JS
-script(type='text/javascript' src='js/script.js')
 script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
 script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+// slick
+script(type='text/javascript' src='js/slick/slick.min.js')
+
+script(type='text/javascript' src='js/script.js')
+script(type='text/javascript' src='./js/footer2.js')

@@ -57,7 +57,7 @@ section.section_1.container-fluid
           div
             img(width='300' height='169' src='images/singerProduct_Page/sp4.jpeg' alt='Xem chi tiết')
       .col-6.product_content_area
-        .sub_menu HOME > THỊT > BÍT TẾT BÒ KOBE
+        //- .sub_menu HOME > THỊT > BÍT TẾT BÒ KOBE
         p.name_product Bít Tết Bò Kobe
         p.price_product 50.000 vnd
         p.sub_product Morbi ut arcu dolor. Maecenas id nulla nec nibh viverra vehicula. Cras feugiat, corper. lla vehicula, lacus ut suscipit fermentum, turpis felis ultricies dui, magna eu lacinia ullamcorper. lla vehicula, lacus ut suscipit fermentum, turpis felis ultricies dui.
@@ -66,106 +66,120 @@ section.section_1.container-fluid
           p.igd - Dứa gai
           p.igd - Kiwi
           p.igd - Hạt điều
+        .quantity.d-flex.pt-2
+          button.qty-decrease(onclick='' type='button') -
+          input#qty(type='text' name='quantity' value='1' size='4')
+          button.qty-increase(onclick='' type='button') +
+          .btn_chose
+            a(href='cart.html')
+              button.btn(type='submit') Thêm vào giỏ hàng
         hr
+        .tag Tags: Món chính
 section.section_2.container
   .comment BÌNH LUẬN
   hr
   .row 
-    .col-2.avatar_comter
-      img(src="", alt="") 
-    .col-10.form_comment
+    .col-1.avatar_comter
+      img(src="images/singerProduct_Page/sontung.png", alt="") 
+    .col-11.form_comment
       .vote
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
+        span.fa.fa-star.checked
       .name_comment Sơn Tùng M-TP
       .date_comment 8/8/2019
-      .content_comment Vivamus orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique. Orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique.
+      .content_comment Món này quá ngon luôn. Tôi ăn hoài mà không thấy chán à. Mang một con bò đến đây cho tôi!!! Các bạn nhất định phải thử ăn qua món này nhé. Sky ơi!
 
   hr
   .post_comment Để lại đánh giá của bạn
+    hr
     .row
       .col-6.form-group
         label(for='') Tên
-        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email')
+        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Nhập tên gọi của bạn')
       .col-6.form-group
         label(for='') Email
-        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Enter email')
+        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp' placeholder='Nhập địa chỉ Email')
     .form-group
       label(for='') Bình luận của bạn
-      textarea#exampleFormControlTextarea1.form-control(rows='3')
-    .text-right
+      textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder='Viết bình luận')
+    .text-left
       button.btn(type='submit') Hoàn thành
 
 section.section_3.container
   .title SẢN PHẨM LIÊN QUAN
   hr
   .card-deck.row
-      .col-3       
-        .card
-          .hover_area
-            img.card-img-top(src='./images/shop_Page/sp5.jpg' alt='Card image cap')
-            .hover_card
-              a(href='cart.html') <i class="fas fa-cart-plus"></i>
-              a(href='cart.html') <i class="fas fa-expand"></i>
-              a(href='cart.html') <i class="fas fa-heart"></i>
-          .card-body
-            .text-center
-              a(href='singerProduct.html').card-text.name
-                | Bít Tết Bò Kobe
-            p.card-text.tag.text-center
-              small.text-muted Món chính
-              hr
-            p.card-text.price.text-center
-              | 50.000 VND
-      .col-3       
-        .card
-          .hover_area
-            img.card-img-top(src='./images/shop_Page/sp1.jpg' alt='Card image cap')
-            .hover_card
-              a(href='cart.html') <i class="fas fa-cart-plus"></i>
-              a(href='cart.html') <i class="fas fa-expand"></i>
-              a(href='cart.html') <i class="fas fa-heart"></i>
-          .card-body
-            .text-center
-              a(href='singerProduct.html').card-text.name
-                | Bít Tết Bò Kobe
-            p.card-text.tag.text-center
-              small.text-muted Món chính
-              hr
-            p.card-text.price.text-center
-              | 50.000 VND
-      .col-3       
-        .card
-          .hover_area
-            img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
-            .hover_card
-              a(href='cart.html') <i class="fas fa-cart-plus"></i>
-              a(href='cart.html') <i class="fas fa-expand"></i>
-              a(href='cart.html') <i class="fas fa-heart"></i>
-          .card-body
-            .text-center
-              a(href='singerProduct.html').card-text.name
-                | Bít Tết Bò Kobe
-            p.card-text.tag.text-center
-              small.text-muted Món chính
-              hr
-            p.card-text.price.text-center
-              | 50.000 VND
-      .col-3       
-        .card
-          .hover_area
-            img.card-img-top(src='./images/shop_Page/sp3.jpg' alt='Card image cap')
-            .hover_card
-              a(href='cart.html') <i class="fas fa-cart-plus"></i>
-              a(href='cart.html') <i class="fas fa-expand"></i>
-              a(href='cart.html') <i class="fas fa-heart"></i>
-          .card-body
-            .text-center
-              a(href='singerProduct.html').card-text.name
-                | Bít Tết Bò Kobe
-            p.card-text.tag.text-center
-              small.text-muted Món chính
-              hr
-            p.card-text.price.text-center
-              | 50.000 VND
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp5.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp1.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp2.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
+    .col-3       
+      .card
+        .hover_area
+          img.card-img-top(src='./images/shop_Page/sp3.jpg' alt='Card image cap')
+          .hover_card
+            a(href='cart.html') <i class="fas fa-cart-plus"></i>
+            a(href='cart.html') <i class="fas fa-expand"></i>
+            a(href='cart.html') <i class="fas fa-heart"></i>
+        .card-body
+          .text-center
+            a(href='singerProduct.html').card-text.name
+              | Bít Tết Bò Kobe
+          p.card-text.tag.text-center
+            small.text-muted Món chính
+            hr
+          p.card-text.price.text-center
+            | 50.000 VND
 
 
 //footer

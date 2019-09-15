@@ -37,6 +37,7 @@
 }
 
 .section_1 .content_left, .content_right{
+  text-align: justify;
     color: #ffffff;
     font-size: 1.8rem;
 }
@@ -88,6 +89,7 @@
   }
   
   .location-title {
+    font-family: 'Prata', serif;
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
@@ -110,6 +112,7 @@
   
   .location-listing:hover .location-title {
     opacity: 1;
+    color: #ffffff;
   }
   
   .location-listing:hover .location-image img {
@@ -260,3 +263,7 @@
 .grid-container{
   grid-template-columns: none;
 }
+.slick-next{
+  right: 0;
+}
+

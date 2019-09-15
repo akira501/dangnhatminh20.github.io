@@ -31,19 +31,35 @@
 
 .menu_blog .nav-item{
     padding-left: 2rem;
+    padding-top: 0.5rem; 
 }
 
 .form-inline{
     background-color: #4C5B7C;
-    height: 5rem;
-    margin-left: 60rem;
+    height: 4rem;
+    margin-left: 55rem;
 }
 .form-inline .form-control{
     background-color: #4C5B7C;
     border: none;
 }
-
-
+.menu_blog .nav-link{
+    border-right: solid 1px #ffffff;
+}
+/* search */
+.navbar-nav li .search-box {
+    font-family: 'Prata', serif;
+    font-size: 1.2rem;
+    height: 100%;
+    margin-top: none;
+    background-color: #4C5B7C;
+    border: none;
+    color: white;
+    border-radius: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: none;
+  }
 
 /* section 1 */
 .section_1 .content{
@@ -101,6 +117,7 @@
 .btn_detail{
     padding-top: 5rem;
     padding-bottom: 5rem;
+
 }
 
 .section_1 .btn{
@@ -109,4 +126,5 @@
     background-color: #FD5B00;
     font-size: 2.4rem;
     font-family: 'Poppins', sans-serif; 
+    color: #ffffff;
 }

@@ -105,7 +105,6 @@
 
 
 
-
 /* phần bên phải */
 .product_content_area{
     padding-left: 5rem;
@@ -139,13 +138,41 @@
     font-style: italic;
 }
 
-/* section 2 */
-.comment{
+.quantity >input ,  .quantity >button  {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    padding-top: 5rem;
+    font-size: 1.4rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center
 }
-
+.btn{
+    background-color: #FD5B00;
+    color: #ffffff;
+    font-size: 1.4rem;
+    height: 3rem;
+    margin-left: 5rem;
+}
+.tag{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: #FD5B00;
+}
+.product_content_area hr{
+    margin: 2rem 0 2rem 0;
+}
+/* section 2 */
+.vote span{
+    color: #FD5B00;
+}
+.comment{
+    font-family: 'Prata', serif;
+    font-size: 1.8rem;
+    padding-top: 0rem;
+}
+.avatar_comter img{
+    width: 100%;
+    border-radius: 50rem;
+}
 .name_comment{
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
@@ -153,7 +180,7 @@
 }
 .date_comment{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-style: italic;
 }
 .content_comment{
@@ -171,6 +198,42 @@
 .post_comment .form-group label{
     font-family: 'Poppins', sans-serif !important;
     font-size: 1.4rem !important;
+}
+
+.form-group label{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+.form-group input{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    border-width: 0 0 1px; 
+}
+textarea{
+    outline: 0;
+    border-width: 0 0 1px;
+    
+}
+textarea.form-control{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+
+.form-group .form-control:focus{
+    outline: 0;
+    border-width: 0 0 1px;
+    box-shadow: none; 
+}
+.post_comment .btn{
+    background-color: #FD5B00;
+    color: #ffffff;
+    font-size: 1.4rem;
+    height: 3rem;
+    margin-left: 0rem;
+    margin-top: 2rem;
 }
 
 /* section 3 */
@@ -207,3 +270,4 @@
     text-decoration: none;
     color: #FD5B00;
 }
+

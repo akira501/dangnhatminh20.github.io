@@ -59,7 +59,7 @@
 }
 .my_cart .title_my_cart{
     font-family: 'Prata', serif;
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     padding-bottom: 3rem;
 }
 .image_product img{
@@ -97,4 +97,39 @@
 .title_pay{
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
+}
+
+/* btn */
+.form-group label{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+.form-group input{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    border-width: 0 0 1px; 
+}
+textarea{
+    outline: 0;
+    border-width: 0 0 1px;
+    
+}
+textarea.form-control{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+
+.form-group .form-control:focus{
+    outline: 0;
+    border-width: 0 0 1px;
+    box-shadow: none; 
+}
+.btn{
+    background-color: #FD5B00;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 2rem;
 }
