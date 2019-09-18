@@ -242,3 +242,20 @@
 
 
 
+@media only screen and (max-width: 576px) {
+    .header_area {
+        background-image: url("../images/home_Page/banner1.jpg");
+        height: 40rem; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+    }
+    .header_main{
+        padding-top: 5rem;
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 10rem;
+        color: #ffffff;
+        line-height: 10rem;
+    }
+}

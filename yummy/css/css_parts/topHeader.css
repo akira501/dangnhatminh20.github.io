@@ -1,0 +1,5 @@
+@media only screen and (max-width: 576px) {
+    .top_header_area{
+        display: none;
+    }
+}
