@@ -41,6 +41,12 @@
     color: #ffffff;
     font-size: 1.8rem;
 }
+.section_1 .content_main .content_left{
+    padding: 2rem 3rem 0 0;
+}
+.section_1 .content_main .content_right{
+    padding: 2rem 0rem 0 3rem;
+}
 .content_main .title{
     color: #FD5B00 !important;
 }
@@ -126,4 +132,57 @@ textarea.form-control{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (min-width: 1800px) {
+    .section_1 .content_main{
+        text-align: justify;
+        padding-left: 20rem;
+        padding-right: 20rem;
+        padding-bottom: 10rem; 
+    }
+    .section_1 .content_main .content_left{
+        padding: 2rem 5rem 0 0;
+    }
+    .section_1 .content_main .content_right{
+        padding: 2rem 0rem 0 5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header_area {
+        background-image: url("../images/reservation_Page/banner.png");
+        height: auto; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+    }
+    .header_main{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 15rem;
+        color: #ffffff;
+        line-height: 10rem;
+    }
+    /* section 1 */
+    .heading{
+        padding-top: 5rem;
+        font-family: 'Dancing Script', cursive;
+        font-size: 6.4rem;
+    }
+    .section_1 .heading{
+        color: #ffffff;
+    }
+    .section_1 .content_main{
+        text-align: justify;
+        padding-left: 10rem;
+        padding-right: 5rem;
+        padding-bottom: 5rem; 
+    }
+    /* section 2 */
+    .form_reservation{
+        padding: 5rem;
+    }
 }
