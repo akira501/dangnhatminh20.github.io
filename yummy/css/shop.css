@@ -28,22 +28,37 @@
 .section_1 .set_food_area{
     border: 2px solid #979797;
 }
-.image_set img{
-    width: 116.5%;
-}
 .image_set{
     padding: 0;
+    background-image: url("../images/shop_Page/set1.jpg");
+    height: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+.btn_detail{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.section_1 .btn{
+    width: 20rem;
+    height: 5rem;
+    background-color: #FD5B00;
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif; 
+    color: #ffffff;
 }
 .section_1 .set_content{
-    background-image: url("../images/shop_Page/set_backgroud.jpg");
-    height: 40rem; 
+    background-image: url("../images/shop_Page/set_backgroud.png");
+    height: auto; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
 }
 .text_content{
-    padding: 9rem;
+    padding: 5rem 9rem 5rem 9rem;
 }
 .section_1 .set_price{
     font-family: 'Prata', serif;
@@ -195,4 +210,12 @@
 }
 .pagination_area .page-item a{
     color: #000;
+}
+
+@media only screen and (min-width: 1800px) {
+    /* Phân trang */
+    .pagination_area{
+        padding-left: 42%;
+        color: #000;
+    }
 }

@@ -78,8 +78,9 @@ section.section_2.gallery.container-fluid
     p.content.text-center Với các đầu bếp hàng đầu thế giới, chúng tôi đã tạo ra những “tác phẩm nghệ thuật” !
   div.text-center
     .menu_section_2
-      nav.navbar.navbar-expand-sm.navbar-light
-        ul.navbar-nav
+      nav.navbar
+        //-d-flex và flex-row 
+        ul.navbar-nav.d-flex.flex-row
           li.nav-item
             a.nav-link(href='#') TẤT CẢ
           li.nav-item
@@ -119,7 +120,6 @@ section.section_2.gallery.container-fluid
           .location-image
             a(href='#')
               img(width='300' height='169' src='images/home_Page/img4.jpg' alt='Xem chi tiết')
-      .grid-container
         article#3685.location-listing
           a.location-title(href='#')
             | Bít tết Wanju
@@ -209,37 +209,46 @@ section.section_4.menu_restaurant.container-fuild
   div.container
     .row
       .col-6.dish
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        ul.leaders
+          li
+            span.dish_name Bít tết bò Kobe
+            span.dish_info 150.000VND
+          li
+            span.dish_name Gà nướng ngũ vị hương
+            span.dish_info 150.000VND
+          li
+            span.dish_name Gà cay phô mai
+            span.dish_info 150.000VND
+          li
+            span.dish_name Trứng tráng rau củ
+            span.dish_info 150.000VND
+          li
+            span.dish_name Sừng trâu hầm nhân sâm
+            span.dish_info 100.000VND
+          li
+            span.dish_name Sừng trâu hầm nhân sâm
+            span.dish_info 100.000VND
+
       .col-6.dish
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
-        div
-          p.dish_name Trứng tráng rau củ
-          p.dish_info Kèm bánh mỳ và sốt chua cay. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .50,000 VND
+        ul.leaders
+          li
+            span.dish_name Bít tết bò Kobe
+            span.dish_info 150.000VND
+          li
+            span.dish_name Gà nướng ngũ vị hương
+            span.dish_info 150.000VND
+          li
+            span.dish_name Gà cay phô mai
+            span.dish_info 150.000VND
+          li
+            span.dish_name Trứng tráng rau củ
+            span.dish_info 150.000VND
+          li
+            span.dish_name Sừng trâu hầm nhân sâm
+            span.dish_info 100.000VND
+          li
+            span.dish_name Sừng trâu hầm nhân sâm
+            span.dish_info 100.000VND
   div.text-center.btn_detail
     button.btn.btn-dark(type='button') Xem chi tiết
 //footer

@@ -20,9 +20,10 @@ footer{
     position: absolute;
     z-index: 1;
     top: -50%;
-    left: 27%;
-    height: auto;
-    width: auto;
+    left: 50%;
+    width: 40%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     background-color: #ffffff;
 }
 .title_form{
@@ -105,7 +106,70 @@ textarea.form-control{
 } */
 
 @media only screen and (max-width: 576px) {
-    footer{
-        display: none;
+    .footer_area{
+        position: relative;
+        height: 48rem;
     }
+    footer .maps-wrapper iframe{
+        height: 40rem;
+    }
+    .padding_form{
+        padding: 2rem 5rem 1rem 5rem;
+    }
+    .footer_form{
+        position: relative;
+        z-index: 1;
+        top: auto;
+        left: auto;
+        width: auto;
+        -webkit-transform: none;
+        transform: none;
+        background-color: #ffffff;
+    }
+    .title_form{
+        /* color: #ffffff; */
+        font-size: 4.8rem;
+        font-family: 'Dancing Script', cursive;
+    }
+    .form-group label{
+        font-size: 1.8rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .form-group input{
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        outline: 0;
+        border-width: 0 0 1px; 
+    }
+
+    .footer_main{
+        position: relative;
+        top: 2rem;
+        left: 0rem;
+        color: #ffffff;
+    }
+    .bottom_left{
+        padding: 0;
+        padding-left: 5rem;
+    }
+    .top_social_bar{
+        /* display: none; */
+    }
+    .bottom_left .logo{
+        font-size: 6.4rem;
+        font-family: 'Dancing Script', cursive;
+        color: #FD5B00;
+    }
+    .bottom_right{
+        font-size: 1.8rem;
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+        padding-top: 2rem;
+        padding-left: 45%;
+    }
+    .bottom_right .fas{
+        padding:0;
+        padding-right: 2rem;
+    }
+    
 }

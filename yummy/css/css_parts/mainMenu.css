@@ -59,7 +59,7 @@
 }
 @media only screen and (max-width: 576px) {
     html{
-        font-size: 40%;
+        font-size: 20%;
     }
     .menu-main .navbar{
         padding: 0;
@@ -81,7 +81,7 @@
     }
     .menu-main .nav-item a{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         font-weight: bold;
     }
     .menu-main .nav-item-sp{
@@ -91,14 +91,15 @@
     }
     .menu-main .nav-item-sp a{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         font-weight: bold;
     }
     .menu-main .nav-item-sp .nav-border{
         border: none;
     }
-    .navbar-brand{
+    .main-menu .navbar-brand{
         line-height: 6rem;
         padding-bottom: 2rem;
+        font-size: 7.2rem!important;
     }
 }
