@@ -110,4 +110,17 @@
     text-align: center;
     padding-top: 5rem;
 }
+.search_form{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+.about_us ul{
+    list-style: none;
+}
+.about_us ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration: none;
 
+}

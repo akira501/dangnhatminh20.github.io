@@ -4,7 +4,9 @@ $(document).ready(function(){
         slidesToShow: 5,
         slidesToScroll: 1,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
     // about
     $('.grid-container').slick({
@@ -27,6 +29,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
       });
   });
