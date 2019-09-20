@@ -8,8 +8,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- fontAweSome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!--slick-->
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+  <!-- Add the new slick-theme.css if you want the default styling-->
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
   <!-- icon-->
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="images/core_img/favicon.ico">
   <!-- Fonts-->
   <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poppins|Prata&amp;display=swap" rel="stylesheet">
@@ -18,18 +22,21 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/singerBlog.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/css_parts/topHeader.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/css_parts/mainMenu.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/css_parts/footer2.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/css_parts/footer.css">
 </head>
 <header class="header_area container-fluid">
   <!--Top Header Area-->
   <!-- Top header-->
-  <div class="top_header_area container-fuild">
-    <div class="row container">
-      <div class="col-5 col-sm-5">
-        <!-- icon-->
+  <div class="top navbar text-white">
+    <div class="container-fluid top-content">
+      <ul class="nav top-left">
+        <li class="nav-item"><span class="fas fa-map-marker-alt"></span> Tây Hồ Hà Nội</li>
+        <li class="nav-item mr-menu"><span class="fas fa-mobile-alt"></span>0366312255</li>
+      </ul>
+      <ul class="nav top-right">
         <div class="top_social_bar"><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></div>
-      </div>
-      <div class="col-7 col-sm-7"></div>
+      </ul>
     </div>
   </div>
   <!-- Menu-->
@@ -38,11 +45,11 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">TRANG CHỦ</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">GIỚI THIỆU</a></li>
-          <li class="nav-item"><a class="nav-link" href="menu.html">THỰC ĐƠN</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">BÀI VIẾT</a></li>
-          <li class="nav-item"><a class="nav-link" href="shop.html">CỬA HÀNG</a></li>
+          <li class="nav-item"><a class="page_1 nav-link" href="index.html">TRANG CHỦ</a></li>
+          <li class="nav-item"><a class="page_2 nav-link" href="about.html">GIỚI THIỆU</a></li>
+          <li class="nav-item"><a class="page_3 nav-link" href="menu.html">THỰC ĐƠN</a></li>
+          <li class="nav-item"><a class="page_4 nav-link" href="blog.html">BÀI VIẾT</a></li>
+          <li class="nav-item"><a class="page_5 nav-link" href="shop.html">CỬA HÀNG</a></li>
           <li class="nav-item-sp"><a class="nav-link nav-border" href="reservation.html">ĐẶT BÀN</a></li>
           <li class="nav-item-sp"><a class="nav-link nav-icon" href="cart.html"><i class="fas fa-cart-plus"></i></a></li>
           <li class="nav-item-sp"><a class="nav-link nav-icon" href="#"><i class="fas fa-search"></i></a></li>
@@ -57,17 +64,17 @@
     <div class="col-9 right_area">
       <div class="post container">
         <p class="post_tag text-center">CÔNG THỨC NẤU ĂN</p>
-        <p class="post_title text-center">BÀO NGƯ HẤP CHANH TÂY</p>
-        <p class="post_subtitle text-center">Ngày 8 /9/2018, by NhatMinh, 2 bình luận</p>
+        <p class="post_title text-center">BÒ BÍT TẾT KOBE</p>
+        <p class="post_subtitle text-center">Ngày 8 /9/2018, by  <a class="author">NhatMinh</a>, 1 bình luận</p>
         <div class="post_image text-center"><img src="./images/singerBlog_page/blog1.jpg" alt="image"></div>
         <div>
-          <p class="post_content">How did the hand pies look? Did you love the brownies? How many choux did you eat in one sitting? Yes, these are the things I think about. So today, after creating a gorgeous selection of our favorites for a client to send as a new year’s gift, I was given a gift of my own: direct feedback from the recipients of the pastries. I was so happy, I had to share it with you.</p>
-          <p class="post_content">So here it is, you loving what we love. Maybe I don’t know where to look for spicy food in Europe, or maybe my idea of spicy differs from the palate here, but I’ve noticed that there’s a decided lack of spicy heat on this side of the pond. I haven’t turned into one of those spice monsters that travel around with ghost chilli pepper flakes in their pocket, but I do appreciate that tingly burn you get when digging in to a perfectly spicy dish.</p>
+          <p class="post_content">Đặt miếng thịt lên trên một mặt phẳng sạch, rắc thêm chút muối và hạt tiêu lên bề mặt thịt, sau đó dùng búa nhỏ hoặc chày đập nhẹ để thịt bò mềm hơn. Lật mặt kia lại và cũng làm tương tự. Lưu ý, bạn đập nhẹ nhàng để thịt mềm và thấm gia vị, tránh làm mạnh tay kẻo thịt bị nát.</p>
+          <p class="post_content">Cho 2 muỗng cà phê dầu ăn, 1 muỗng cà phê hạt tiêu, 1 muỗng cà phê dầu hào và chút tỏi băm vào một cái chén, trộn thật đều. Đỗ hỗn hợp gia vị trên lên miếng thịt bò, dùng tay thoa đều hỗn hợp lên cả 2 mặt thịt. Bọc kín khay thịt lại rồi ướp trong khoảng 1 – 2 tiếng cho thịt thấm gia vị. Trong thời gian này bạn tranh thủ sơ chế các nguyên liệu khác.</p>
         </div>
         <div class="post_image text-center"><img src="./images/singerBlog_page/blog2.jpg" alt="image"></div>
         <div>
-          <p class="post_content">How did the hand pies look? Did you love the brownies? How many choux did you eat in one sitting? Yes, these are the things I think about. So today, after creating a gorgeous selection of our favorites for a client to send as a new year’s gift, I was given a gift of my own: direct feedback from the recipients of the pastries. I was so happy, I had to share it with you.</p>
-          <p class="post_content">So here it is, you loving what we love. Maybe I don’t know where to look for spicy food in Europe, or maybe my idea of spicy differs from the palate here, but I’ve noticed that there’s a decided lack of spicy heat on this side of the pond. I haven’t turned into one of those spice monsters that travel around with ghost chilli pepper flakes in their pocket, but I do appreciate that tingly burn you get when digging in to a perfectly spicy dish.</p>
+          <p class="post_content">Khoai tây rửa sạch, cạo vỏ rồi rửa lại lần nữa, thái khoai thành các thanh dài nhỏ vừa ăn (như trong hình). Bạn nấu sôi một nồi nước pha chút muối, sau đó cho khoai tây vào luộc trong khoảng thời gian 2 – 3 phút rồi vớt ra, để ráo.</p>
+          <p class="post_content">Bắc chảo lên bếp với lượng dầu ăn vừa đủ để chiên khoai, khi dầu nóng già thì bạn cho khoai tây vào chiên chín vàng.  Khi khoai chín vàng, bạn vớt hết ra ngoài cho ráo dầu rồi chiên tiếp lần 2, cách này sẽ giúp khoai tây giòn lâu hơn.</p>
         </div>
         <hr>
       </div>
@@ -77,7 +84,7 @@
         </div>
         <div class="col-10">
           <p class="author_name">Nhat Minh</p>
-          <p class="info">Did you love the brownies? How many choux did you eat in one sitting? Yes, these are the things I think about. So today, after creating a gorgeous selection of our favorites for a client to send as a new year's gift, I was given a gift of my own: direct feedback from the recipients of the pastries.</p>
+          <p class="info">Hướng dẫn cách làm bò bít tết ngon tại nhà bằng 6 bước thực hiện, ăn kèm khoai tây chiên và salad rất hấp dẫn. Với cách làm này, món bò bít tết sốt tiêu với phần thịt bò ngon mềm, khoai tây chiên béo ngậy cùng đĩa salad thanh mát chống ngán sẽ làm người thưởng thức rất thích thú.</p>
           <div class="view_all"><a href="#">Xem thêm bài viết của Nhat Minh</a></div>
         </div>
         <hr>
@@ -85,12 +92,12 @@
       <div class="comment">BÌNH LUẬN
         <hr>
         <div class="row"> 
-          <div class="col-2 avatar_comter"><img src="./images/singerBlog_page/author1.png" alt="image"></div>
+          <div class="col-2 avatar_comter"><img src="./images/singerBlog_page/sontung.png" alt="image"></div>
           <div class="col-10 form_comment">
             <div class="vote"></div>
             <div class="name_comment">Sơn Tùng M-TP</div>
             <div class="date_comment">8/8/2019</div>
-            <div class="content_comment">Vivamus orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique. Orci sem, consectetur ut stibulum a, semper ac dui. Proin aliquam mi nec hendrerit. Sed entum velit vel ip bibendum tristique.</div>
+            <div class="content_comment">Rất cảm ơn tác giả vì bài viết rất hay và tâm huyết. Mình đã làm theo và đã có người yêu nhờ món ăn nay. Thank you very much!</div>
           </div>
         </div>
         <hr>
@@ -98,16 +105,16 @@
           <div class="row">
             <div class="col-6 form-group">
               <label for="">Tên</label>
-              <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Nhập tên của bạn">
             </div>
             <div class="col-6 form-group">
               <label for="">Email</label>
-              <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Nhập địa chỉ Email">
             </div>
           </div>
           <div class="form-group">
             <label for="">Bình luận của bạn</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Để lại bình luận của bạn"></textarea>
           </div>
           <div class="text-right">
             <button class="btn" type="submit">Hoàn thành</button>
@@ -145,48 +152,36 @@
 </section>
 <!--footer-->
 <footer class="container-fuild">
-  <div class="maps-wrapper">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3022.260812859955!2d-73.990184!3d40.756288!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb134c693ac14a04c!2sThe+TimesCenter!5e0!3m2!1sen!2suk!4v1393485725496" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-  </div>
-  <div class="footer_area">
-    <div class="footer_form">
-      <div class="padding_form">
-        <div class="title_form text-center"> <span style="color:#FD5B00;">Liên hệ </span>với chúng tôi</div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Tên</label>
-          <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="Nhập tên gọi của bạn">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
-          <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="Nhập địa chỉ email">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Tin nhắn của bạn</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Viết tin nhắn"></textarea>
-        </div>
-        <div class="text-center"> 
-          <button class="btn" type="submit">Gửi tin nhắn</button>
-        </div>
-      </div>
-    </div>
-    <div class="footer_main container-fluid row">
-      <div class="col-sm-3 bottom_left text-center">
-        <div class="logo">Yummy</div>
-        <div class="top_social_bar"><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></div>
-      </div>
-      <div class="col-sm-6"></div>
-      <div class="col-sm-3 bottom_right text-left">
-        <div class="address"> <i class="fas fa-map-marker-alt"> </i>Tây Hồ Hà Nội</div>
-        <div class="phone"> <i class="fas fa-mobile-alt"> </i>0366312255</div>
-        <div class="email"> <i class="fas fa-envelope"></i>yummy@gmail.com</div>
-      </div>
+  <div class="top_footer">
+    <h1 class="text-center title">INSTARGRAM</h1>
+    <hr>
+    <div class="slider" id="single_item">
+      <div><img width="300" height="169" src="images/home_Page/img1.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img2.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img3.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img4.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img5.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img1.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img2.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img3.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img4.jpg" alt="Xem chi tiết"></div>
+      <div><img width="300" height="169" src="images/home_Page/img5.jpg" alt="Xem chi tiết"></div>
     </div>
   </div>
-  <div class="footer_bottom text-center">2019 Yummy By SunKt0212</div>
+  <div class="row main_footer">
+    <div class="col-6 logo">yummy</div>
+    <div class="col-6 right_area">
+      <div class="network d-flex flex-row-reverse"><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a><a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></div>
+      <div class="make_by d-flex flex-row-reverse">© 2019 YUMMY. MAKED BY NHATMINH</div>
+    </div>
+  </div>
 </footer>
 <!-- Optional JavaScript-->
 <!-- jQuery first, then Popper.js, then Bootstrap JS-->
-<script type="text/javascript" src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- slick-->
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="./js/footer2.js"></script>

@@ -28,7 +28,7 @@
 }
 .section_1 .post_content{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 .post_image img{
     width: 100%;
@@ -37,14 +37,19 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-
+.post a.author{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: #FD5B00;
+}
 /* Cmt */
 .author{
     padding-top: 5rem;
 }
 .author .author_name{
     font-family: 'Prata', serif;
-    font-size: 2.8rem;
+    font-size: 1.4rem;
+    color: #FD5B00;
 }
 .author .info{
     font-family: 'Poppins', sans-serif;
@@ -54,6 +59,7 @@
 .view_all a{
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
+    color: #FD5B00;
 }
 .comment{
     font-family: 'Poppins', sans-serif;
@@ -114,13 +120,18 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
 }
+.search_form form{
+    padding-top: 1rem;
+}
 .about_us ul{
     list-style: none;
 }
 .about_us ul li a{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Prata', serif;
     font-size: 1.4rem;
     color: #000;
     text-decoration: none;
-
+}
+.about_us ul li a:hover{
+    color: #FD5B00;   
 }

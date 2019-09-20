@@ -1,4 +1,7 @@
 /*------------Header-----------*/
+.menu-main .nav-item .page_3{
+    border-bottom: 1px solid #ffffff;
+}
 /* Banner */
 .header_area {
     background-image: url("../images/menu_Page/banner.png");

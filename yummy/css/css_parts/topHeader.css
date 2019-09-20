@@ -1,6 +1,34 @@
-@media only screen and (max-width: 576px) {
-    .top_header_area{
-        display: none;
-    }
+/*Top*/
+.top {
+    height: 4rem;
+    border-bottom: solid 1px #686868;
 }
 
+.top.navbar {
+	padding: 0 !important;
+}
+
+.top .nav-item {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+}
+
+.top span {
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+.mr-menu {
+	margin-right: 3rem;
+}
+.top-right{
+    margin-right: 2rem;
+}
+.top_social_bar i{
+    font-size: 1.5rem;
+}
+.top_social_bar i:hover{
+    color: #FD5B00;
+}
+/*Top*/

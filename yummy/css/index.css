@@ -1,8 +1,11 @@
 /*------------Header-----------*/
+.menu-main .nav-item .page_1{
+    border-bottom: 1px solid #ffffff;
+}
 /* Banner */
 .header_area {
     background-image: url("../images/home_Page/banner1.jpg");
-    height: 77.5rem; 
+    height: 70rem; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,6 +168,9 @@
   .location-listing:hover .location-image img {
     filter: blur(2px);
   }
+  .location-listing a:hover {
+    text-decoration: none;
+  }
   
   
   /* for touch screen devices */
@@ -192,10 +198,13 @@
     font-family: 'Prata', serif;
     font-size: 3.6rem;
 }
-
+.section_3 .content{
+    color: #696969;
+}
 .section_3 .service .content{
     font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
+    color: #696969;
 }
 
 /* Section4 */
@@ -257,7 +266,7 @@
 }
 .section_4 .dish .dish_info{
     font-size: 2.4rem;
-    color: #FD5B00;
+    color: #FEAF65;
 }
 
 .btn_detail{
@@ -267,10 +276,12 @@
 
 .section_4 .btn-dark{
     background-color: #FD5B00;
-    font-size: 2.4rem;
-    font-family: 'Poppins', sans-serif; 
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
 }
-
+.section_4 .btn_detail button:hover{
+    background-color: #B62A00;
+}
 .section_4 .btn{
     width: 20rem;
     height: 5rem;
@@ -282,6 +293,16 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     /*   grid-gap: 1em; */
+    }
+    .header_main{
+        padding-top: 15rem;
+        font-family: 'Fredericka the Great', cursive;
+        font-size: 18rem;
+        color: #ffffff;
+        line-height: 18rem;
+    }
+    .chef_area{
+        padding: 20rem 10rem 10rem 20rem;
     }
 }
 
