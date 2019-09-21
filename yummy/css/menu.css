@@ -126,6 +126,9 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .menu-main .nav-item .page_3{
+        border-bottom: none;
+    }
     .header_area {
         background-image: url("../images/home_Page/banner1.jpg");
         height: auto; 

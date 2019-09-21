@@ -159,6 +159,9 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .menu-main .nav-item .page_4{
+        border-bottom: 1px solid #ffffff;
+    }
     .header_area {
         background-image: url("../images/blog_Page/banner.png");
         height: auto; 

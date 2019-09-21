@@ -223,6 +223,9 @@
     }
 }
 @media only screen and (max-width: 576px) {
+    .menu-main .nav-item .page_5{
+        border-bottom: none;
+    }
     .header_area {
         background-image: url("../images/shop_Page/banner.png");
         height: auto; 

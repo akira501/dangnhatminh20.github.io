@@ -47,11 +47,9 @@ a, p{
 .menu-main .nav-item a:hover{
     border-bottom: 3px solid #ffffff;
 }
-
-.menu-main .nav-item a:focus{
-    border-bottom: 3px solid #ffffff;
+.menu-main .nav-item a:active{
+    border-bottom: none;
 }
-
 .menu-main .nav-item-sp a{
     color: #ffffff !important;
 } 
