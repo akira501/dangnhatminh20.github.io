@@ -127,12 +127,33 @@ textarea.form-control{
     border-width: 0 0 1px;
     box-shadow: none; 
 }
-.btn{
+.btn_1{
     background-color: #FD5B00;
     color: #ffffff;
     font-size: 1.8rem;
     margin-top: 2rem;
 }
+.btn_2{
+    background-color: #797979;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.btn_1:hover{
+    background-color: #B62A00;
+    color: #ffffff!important;
+}
+.btn_2:hover{
+    background-color: #696969;
+    color: #ffffff!important;
+}
+.btn_left{
+    margin-left: 8rem;
+}
+.btn_right{
+    margin-left: 2rem;
+}
+
 
 @media only screen and (max-width: 576px) {
     .header_area {
@@ -151,7 +172,10 @@ textarea.form-control{
         color: #ffffff;
         line-height: 10rem;
     }
-    .form-check input{
-        
+    .btn_left{
+        margin-left: 0rem;
+    }
+    .btn_right{
+        margin-left: 2rem;
     }
 }

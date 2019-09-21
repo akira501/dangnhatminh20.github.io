@@ -150,8 +150,21 @@
     color: #ffffff;
     font-size: 1.4rem;
     height: 3rem;
-    margin-left: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
+.btn_chose button:hover{
+    background-color: #B62A00;
+    color: #ffffff;
+}
+.btn_return button:hover{
+    background-color: #696969;
+    color: #ffffff;
+}
+.btn_return button{
+    background-color: #797979;
+}
+
 .tag{
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;

@@ -63,7 +63,8 @@
     }
     .menu-main .navbar{
         padding: 0;
-        background-color: #ffffff;
+        background-color: #222023;
+        opacity: 0.8;
     }
     .navbar-light .navbar-toggler{
         background-color: #FD5B00;
@@ -78,6 +79,7 @@
         text-align: center;
         background-color: #222023;
         border-bottom: solid 1px #ffffff;
+        
     }
     .menu-main .nav-item a{
         font-family: 'Poppins', sans-serif;

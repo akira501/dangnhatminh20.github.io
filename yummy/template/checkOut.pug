@@ -47,11 +47,11 @@ section.section_1.container
         label(for='') Địa chỉ *
         input#exampleInputEmail1.form-control(type='text' aria-describedby='' placeholder='Nhập địa chỉ')
       .form-check
-        input#defaultCheck1.form-check-input(type='checkbox' value='')
+        input#defaultCheck1.form-check-input(type='checkbox' value='' disabled)
         label.form-check-label(for='defaultCheck1')
           | Tạo tài khoản
       .form-check
-        input#defaultCheck1.form-check-input(type='checkbox' value='')
+        input#defaultCheck1.form-check-input(type='checkbox' value='' disabled)
         label.form-check-label(for='defaultCheck1')
           | Ship đến địa chỉ khác
       .form-group.note
@@ -63,21 +63,21 @@ section.section_1.container
         div
           .row
             .col-2.image_product
-              img.img-fluid(src='./images/cart_Page/img1.jpg')
-            .col-6.name_product Salad hoa quả
-            .col-4.price_product 50000 VND
+              img.img-fluid(src='./images/cart_Page/sp5.jpg')
+            .col-6.name_product Bò bít tết Kobe
+            .col-4.price_product 150.000 VND
           hr
           .row
             .col-8.name Tạm tính
-            .col-4.price 50000 VND
+            .col-4.price 150.000 VND
           hr
           .row
             .col-8.name Phí vận chuyển
-            .col-4.price 5000 VND
+            .col-4.price 15.000 VND
           hr
           .row
             .col-8.name_total Tổng tiền
-            .col-4.price_total 55000 VND
+            .col-4.price_total 165.000 VND
         div.pay_area
           .title_pay Chọn hình thức thanh toán
           hr
@@ -93,8 +93,12 @@ section.section_1.container
             input#exampleRadios3.form-check-input(type='radio' name='exampleRadios' value='option3')
             label.form-check-label(for='exampleRadios3')
               | Thẻ ATM nội địa/ Internet Banking
-          div.text-center 
-            button.btn ĐẶT MUA
+          div.d-flex
+            .btn_left  
+              button.btn.btn_1 Đặt mua
+            .btn_right
+             a(href='shop.html')
+              button(href='shop.html').btn.btn_2 Tiếp tục mua hàng
 
 
 //footer
