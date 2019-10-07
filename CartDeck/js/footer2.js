@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // 2 nè
+    // footer 2 nè
     $('#single_item').slick({
         slidesToShow: 5,
         slidesToScroll: 1,

@@ -1,4 +1,4 @@
-function MyHeader(props) {
+function MyHeader() {
   return (
     <header className="header_area container-fluid">
       {/*Top Header Area*/}
