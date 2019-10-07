@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>QLSV - Cập nhập thông tin học viên</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center m-4">Cập nhập thông tin học viên</h1>
+        <form class="form_Create pl-5 pr-5" id="idForm">
+            <div class="form-group">
+                <label for="name">Họ tên học viên</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập họ tên học viên" required>
+            </div>
+            <div class="form-group">
+                <label for="birthYear">Năm sinh</label>
+                <input type="text" class="form-control" id="birthYear" placeholder="Nhập năm sinh" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Địa chỉ Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="text" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+            <button class="btn btn-primary" id="btn-save" onclick="updateStudent()"><i class="fa fa-save"></i>
+                Lưu</button>
+        </form>
+        <div class="pl-5 pr-5 pt-2">
+            <a href="index.html">
+                <button class="btn btn-primary">Danh sách học viên</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const studentId = getIdQueryParam();
+        $(function () {
+            renderContent()
+        })
+        //Lấy id ở URL
+        function getIdQueryParam() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('id');
+        }
+        //Get student by id
+        function getStudentByIdAPI(id, renderFunction) {
+            $.ajax({
+                method: 'GET',
+                url: "https://quan-ly-hoc-vien.herokuapp.com/users" + '/' + id,
+            }).done(function (student) {
+                renderFunction(student)
+            }).catch(function () {
+                renderFunction(null)
+            })
+        }
+        function renderContent() {
+            getStudentByIdAPI(studentId, function (student) {
+                if (student) {
+                    $('#name').val(student.name);
+                    $('#birthYear').val(student.birthYear);
+                    $('#email').val(student.email);
+                    $('#phone').val(student.phone);
+                } else {
+                    $('#form').html('Học viên không tồn tại!');
+                    $('#btn-save').hide();
+                }
+            })
+        }
+        //Update student
+        function updateStudentAPI(studentId, studentInfo) {
+            $.ajax({
+                method: 'PUT',
+                url: "https://quan-ly-hoc-vien.herokuapp.com/users" + '/' + studentId,
+                data: studentInfo
+            }).done(function () {
+                window.location = 'index.html';
+            })
+        }
+        function updateStudent() {
+            const studentInfo = {
+                name: $('#name').val(),
+                birthYear: $('#birthYear').val(),
+                email: $('#email').val(),
+                phone: $('#phone').val()
+            }
+            updateStudentAPI(studentId, studentInfo)
+
+        }
+
+    </script>
+</body>
+
+</html>
