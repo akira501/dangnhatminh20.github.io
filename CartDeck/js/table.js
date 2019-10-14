@@ -4,74 +4,101 @@ class MyTableCart extends React.Component {
     this.state = {
       products: [
         {
-          image: './images/cart_Page/sp5.jpg',
-          name: 'Bò bít tết Kobe',
+          image: "./images/cart_Page/sp5.jpg",
+          name: "Bò bít tết Kobe",
           priceProduct: 150000,
-          quality: 2,
+          quanlity: 2
         },
         {
-          image: './images/cart_Page/img2.jpg',
-          name: 'Bánh mì',
+          image: "./images/cart_Page/img2.jpg",
+          name: "Bánh mì",
           priceProduct: 10000,
-          quality: 1,
+          quanlity: 1
         },
         {
-          image: './images/cart_Page/img1.jpg',
-          name: 'Bánh Matcha',
+          image: "./images/cart_Page/img1.jpg",
+          name: "Bánh Matcha",
           priceProduct: 100000,
-          quality: 1,
-        },
+          quanlity: 1
+        }
       ]
     };
+    this.total=this.state.products.reduce((totalProduct ,product, index, products)=>{
+      return totalProduct+=(product.quanlity*product.priceProduct);
+    }, 0)
+  }
+  IncrenentItem= () => {
+    this.setState(
+      
+    )
+  }
+  DecreaseItem= () => {
+    this.setState(
+      
+    )
   }
   render() {
-    let fomatNumber=new Intl.NumberFormat('vn-VN', { style: 'currency', currency: 'vnd' });
+    let fomatNumber = new Intl.NumberFormat("vn-VN", {
+      style: "currency",
+      currency: "vnd"
+    });
     console.log();
-    const product = this.state.products[0, 1, 2];
-    const listItems = this.state.products.map((product) =>
+    const product = [...this.state.products]; //Use spread operator es6
+    const listItems = this.state.products.map(product => (
       <tr className="cart-item">
         <td className="product-thumbnail">
           <a href="#">
-            <img
-              className="img-fluid"
-              src={product.image}
-            />
+            <img className="img-fluid" src={product.image} />
           </a>
         </td>
         <td className="product-name">
           <a href="#">{product.name}</a>
         </td>
-        <td className="product-price">{fomatNumber.format(product.priceProduct)}</td>
+        <td className="product-price">
+          {fomatNumber.format(product.priceProduct)}
+        </td>
         <td className="product-quantity">
           <div className="quantity">
-            <button className="qty-decrease" onclick type="button">
+            <button
+              className="qty-decrease"
+              onClick={() => product.quanlity-1}
+              type="button"
+            >
               -
-                </button>
+            </button>
             <input
-              id="qty"
+              id="display_quantity"
               type="text"
               name="quantity"
-              defaultValue={product.quality}
-              size={4}
-            />
-            <button className="qty-increase" onclick type="button">
+              // defaultValue={product.quanlity}
+              value={product.quanlity}
+              onChange={this.handleChange}
+              size={3}
+            >
+                
+            </input>
+            <button
+              className="qty-increase"
+              onClick={this.IncrenentItem}
+              type="button"
+            >
               +
-                </button>
+            </button>
           </div>
         </td>
-        <td className="product-subtotal" />
+        <td className="product-subtotal">{fomatNumber.format(product.priceProduct*product.quanlity)}</td>
         <td className="product-remove">
           <button>
             <i className="far fa-trash-alt" />
           </button>
         </td>
       </tr>
-    )
+    ));
     return (
-      < section className="section_1 container" >
+      <section className="section_1 container">
         <div className="title text-center">
           Giỏ hàng
-        <hr />
+          <hr />
         </div>
         <div className="sub_title text-center">Home &gt; Giỏ hàng</div>
         <div className="row cart_area">
@@ -94,8 +121,6 @@ class MyTableCart extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                {/* copy */}
-                {/* {products} */}
                 {listItems}
                 <tr>
                   <td className="actions" colSpan={6}>
@@ -122,12 +147,12 @@ class MyTableCart extends React.Component {
                 <tbody>
                   <tr className="cart-subtotal">
                     <th>Tạm tính</th>
-                    <td />
+                    <td>{this.total}</td>
                   </tr>
                   <tr className="cart-discount">
                     <th>
                       Giảm giá
-                    <span className="discount-rate" />
+                      <span className="discount-rate" />
                     </th>
                     <td>0</td>
                   </tr>
@@ -149,7 +174,7 @@ class MyTableCart extends React.Component {
             </div>
           </div>
         </div>
-      </section >
-    )
+      </section>
+    );
   }
 }
