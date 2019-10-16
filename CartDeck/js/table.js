@@ -4,48 +4,107 @@ class MyTableCart extends React.Component {
     this.state = {
       products: [
         {
+          id: 1,
           image: "./images/cart_Page/sp5.jpg",
           name: "Bò bít tết Kobe",
           priceProduct: 150000,
           quanlity: 2
         },
         {
+          id: 2,
           image: "./images/cart_Page/img2.jpg",
           name: "Bánh mì",
           priceProduct: 10000,
           quanlity: 1
         },
         {
+          id: 3,
           image: "./images/cart_Page/img1.jpg",
           name: "Bánh Matcha",
           priceProduct: 100000,
           quanlity: 1
         }
-      ]
+      ],
+      coupon: 0, 
+      couponInput: ''
     };
-    this.total=this.state.products.reduce((totalProduct ,product, index, products)=>{
-      return totalProduct+=(product.quanlity*product.priceProduct);
-    }, 0)
   }
-  IncrenentItem= () => {
-    this.setState(
-      
-    )
+  increnentItem(id) {
+    const newProduct = this.state.products.map(product => {
+      if (product.id === id && product.quanlity < 20) {
+        product.quanlity++;
+      }
+      return product;
+    });
+    this.setState({
+      product: newProduct
+    });
   }
-  DecreaseItem= () => {
-    this.setState(
-      
-    )
+  decreaseItem(id) {
+    const newProduct = this.state.products.map(product => {
+      if (product.id === id && product.quanlity > 0) {
+        product.quanlity--;
+      }
+      return product;
+    });
+    this.setState({
+      product: newProduct
+    });
   }
+  //get value in input
+  getCouponInput(e){
+    const newCouponInput = e.target.value;
+    this.setState({
+      couponInput: newCouponInput
+    });
+  }
+  //Kiem tra couponCode
+  useCoupon(){
+    const newCoupon=0.25;
+    if(this.state.couponInput=='YUMMY'){
+      alert('Đã áp dụng mã giảm giá thành công!');
+      this.setState({
+        coupon: newCoupon
+      })
+    }
+    else{
+      alert('Sai mã, vui lòng thử lại!');
+    }
+  }
+  // Xóa sản phẩm theo id
+  removeProduct(id) {
+    // Tạo ra mảng mới chứa các sản phẩm có id khác với id truyền vào
+    const newProduct = this.state.products.filter(product => {
+      return product.id !== id;
+    });
+
+    // Cập nhật lại state (không chứa sản phẩm có id truyền vào)
+    this.setState({
+      products: newProduct
+    });
+  }
+
+
   render() {
-    let fomatNumber = new Intl.NumberFormat("vn-VN", {
+    const fomatNumber = new Intl.NumberFormat("vn-VN", {
       style: "currency",
       currency: "vnd"
     });
-    console.log();
     const product = [...this.state.products]; //Use spread operator es6
+    const coupon =this.state.coupon;
+    //Tính tổng
+    const subTotal = this.state.products.reduce(
+      (totalProduct, product, index, products) => {
+        return (totalProduct += product.quanlity * product.priceProduct);
+      },
+      0
+    );
+    //Nhập mã giảm giá
+    const total = subTotal-(subTotal*(coupon))
+
+    
     const listItems = this.state.products.map(product => (
-      <tr className="cart-item">
+      <tr className="cart-item" key={product.id}>
         <td className="product-thumbnail">
           <a href="#">
             <img className="img-fluid" src={product.image} />
@@ -61,7 +120,7 @@ class MyTableCart extends React.Component {
           <div className="quantity">
             <button
               className="qty-decrease"
-              onClick={() => product.quanlity-1}
+              onClick={e => this.decreaseItem(product.id, e)}
               type="button"
             >
               -
@@ -70,25 +129,25 @@ class MyTableCart extends React.Component {
               id="display_quantity"
               type="text"
               name="quantity"
-              // defaultValue={product.quanlity}
               value={product.quanlity}
-              onChange={this.handleChange}
-              size={3}
-            >
-                
-            </input>
+              onChange={this.handleQuantity}
+            ></input>
             <button
               className="qty-increase"
-              onClick={this.IncrenentItem}
+              onClick={e => this.increnentItem(product.id, e)}
               type="button"
             >
               +
             </button>
           </div>
         </td>
-        <td className="product-subtotal">{fomatNumber.format(product.priceProduct*product.quanlity)}</td>
+        <td className="product-subtotal">
+          {fomatNumber.format(product.priceProduct * product.quanlity)}
+        </td>
         <td className="product-remove">
-          <button>
+          <button
+            onClick={e => this.removeProduct(product.id, e)}
+          >
             <i className="far fa-trash-alt" />
           </button>
         </td>
@@ -134,9 +193,9 @@ class MyTableCart extends React.Component {
           </div>
           <div className="col-6 cart-coupon-area">
             <div className="cart-coupon">
-              <div className="title_coupon">Nhập mã giảm giá</div>
-              <input type="text" defaultValue placeholder="Nhập mã giảm giá" />
-              <button className="btn apply-coupon link-to">Áp dụng</button>
+              <div className="title_coupon">Nhập mã giảm giá (Nhập "YUMMY")</div>
+              <input type="text" onChange={e => this.getCouponInput(e)} placeholder="Nhập mã giảm giá" />
+              <button className="btn apply-coupon link-to" onClick={e => this.useCoupon(e)}>Áp dụng</button>
             </div>
           </div>
           <div className="col-6 cart-total-area">
@@ -147,19 +206,12 @@ class MyTableCart extends React.Component {
                 <tbody>
                   <tr className="cart-subtotal">
                     <th>Tạm tính</th>
-                    <td>{this.total}</td>
-                  </tr>
-                  <tr className="cart-discount">
-                    <th>
-                      Giảm giá
-                      <span className="discount-rate" />
-                    </th>
-                    <td>0</td>
+                    <td>{subTotal}</td>
                   </tr>
                   <tr className="order-total">
                     <th>Thành tiền</th>
                     <td className="amount">
-                      <strong />
+                      <strong>{total}</strong>
                     </td>
                   </tr>
                 </tbody>
