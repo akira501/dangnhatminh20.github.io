@@ -176,6 +176,7 @@ class MyTableCart extends React.Component {
                     <span className="hidden-mobile">Số lượng</span>
                   </th>
                   <th className="product-subtotal">Thành tiền</th>
+                  
                   <th className="product-remove">Chỉnh sửa</th>
                 </tr>
               </thead>
