@@ -1,512 +1,496 @@
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html{
-	font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-	background-image: url("img/background5.jpg"); 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 120rem;
-	width: 100%;
-	position: relative;
+body {
+  background-image: url("img/background5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120rem;
+  width: 100%;
+  position: relative;
 }
-audio{
-	display: none;
+audio {
+  display: none;
 }
-/*.background_1{
-	background-image: url("img/background3.jpg"); 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 120rem;
-	width: 100%;
-	position: absolute;
-	display: none;
-	animation: change_background 2s ease-in-out;
-	}*/
-	.back a{
-		font-family: 'christmabetregular';
-		font-size: 5rem;
-		text-decoration: none;
-		color: #ce0000;
-		padding: 2rem;
-	}
-	.pine_png{
-		position: absolute;
-		padding-top: 38%;
-		padding-left: 20%;
-		display: none;
-		animation: change_background 3s ease-in-out;
-	}
-	.gift{
-		position: absolute;
-		padding-top: 49%;
-		padding-left: 75%;
-		width: 100%;
-		animation: gift 1s linear infinite;
-		animation-direction: alternate;
-		margin-top: 0%;
-	}
-	.gift img{
-		max-width: 35%;
-		min-width: 10%;
-	}
-	.gift img:hover{
-		transform: scale(2);
-		transition: 0.5s;
-		cursor: pointer;
-	}
 
-	.card_position{
-		position: absolute;
-		margin-top: 20rem;
-		margin-left: 37%;
-	}
-	.card{
-		z-index: 1;
-		width: 50rem;
-		height: 50rem;
-		box-shadow: 0px 0px 10px 2px #fff;
-		border: 2px solid #f6f5f5;
-		background-image: url("img/Xmascard.jpg"); 
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		display: none;
-		animation: slide-fwd-tl 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	}
-	.card:hover{
-		cursor: pointer;
-		transform: scale(2);
+.back a {
+  font-family: "christmabetregular";
+  font-size: 5rem;
+  text-decoration: none;
+  color: #ce0000;
+  padding: 2rem;
+}
+.pine_png {
+  position: absolute;
+  padding-top: 38%;
+  padding-left: 20%;
+  display: none;
+  animation: change_background 3s ease-in-out;
+}
+.gift {
+  position: absolute;
+  padding-top: 49%;
+  padding-left: 75%;
+  width: 100%;
+  animation: gift 1s linear infinite;
+  animation-direction: alternate;
+  margin-top: 0%;
+}
+.gift img {
+  max-width: 35%;
+  min-width: 10%;
+}
+.gift img:hover {
+  transform: scale(2);
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-	}
-	.title_card h1{
-		font-family: 'christmabetregular';
-		font-size: 5rem;
-		text-align: center;
-		padding-top: 10rem
-	}
-	.content_card{
-		font-family: 'ananda_neptouchregular';
-		font-size: 3rem;
-		margin-top: 3rem;
-		margin-left: 11rem;
-		color: #ce0000;
-	}
-	i{
-		animation: blink 1s ease infinite;
-	}
-	.m{
-		animation-delay: 0.1s;
-	}
-	.e{
-		animation-delay: 0.2s;
-	}
-	.r1{
-		animation-delay: 0.3s;
-	}
-	.r2{
-		animation-delay: 0.4s;
-	}
-	.y{
-		animation-delay: 0.5s;
-	}
+.card_position {
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: 37%;
+}
+.card {
+  z-index: 1;
+  width: 50rem;
+  height: 50rem;
+  box-shadow: 0px 0px 10px 2px #fff;
+  border: 2px solid #f6f5f5;
+  background-image: url("img/Xmascard.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  animation: slide-fwd-tl 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(2);
+}
+.title_card h1 {
+  font-family: "christmabetregular";
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 10rem;
+}
+.content_card {
+  font-family: "ananda_neptouchregular";
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-left: 11rem;
+  color: #ce0000;
+}
+i {
+  animation: blink 1s ease infinite;
+}
+.m {
+  animation-delay: 0.1s;
+}
+.e {
+  animation-delay: 0.2s;
+}
+.r1 {
+  animation-delay: 0.3s;
+}
+.r2 {
+  animation-delay: 0.4s;
+}
+.y {
+  animation-delay: 0.5s;
+}
 
-	.christmas{
-		animation-delay: 0.6s;
-	}
+.christmas {
+  animation-delay: 0.6s;
+}
 
-	@keyframes blink {
-		0% {color: #ce0000;}
-		20% {color: #fff400;}
-		40% {color: #15ff00;}
-		60% {color: #00fff9;}
-		80% {color: #002bff;}
-		100% {color: #ff00f4;}
-	}
+@keyframes blink {
+  0% {
+    color: #ce0000;
+  }
+  20% {
+    color: #fff400;
+  }
+  40% {
+    color: #15ff00;
+  }
+  60% {
+    color: #00fff9;
+  }
+  80% {
+    color: #002bff;
+  }
+  100% {
+    color: #ff00f4;
+  }
+}
 
+@keyframes gift {
+  10% {
+    transform: rotateX(25deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+  }
+  90% {
+    transform: rotateX(-25deg);
+  }
+}
 
+@keyframes slide-fwd-tl {
+  0% {
+    transform: translateZ(20rem) translateY(50rem) translateX(40rem) scale(0.1);
+  }
+  50% {
+    transform: translateZ(20rem) translateY(10rem) translateX(20rem) scale(0.1);
+  }
+  100% {
+    transform: translateZ(0) translateY(0) translateX(0);
+  }
+}
 
+@keyframes change_background {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+/*copy snow*/
+.winter-is-coming,
+.snow {
+  z-index: 100;
+  pointer-events: none;
+}
 
-	@keyframes gift {
-		10%{
-			transform: rotateX(25deg);
-		}           
-		50%{
-			transform: rotateX(0deg);
-		}        
-		90%{
-			transform: rotateX(-25deg);
-		}
-	}
+.winter-is-coming {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
 
+.snow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: falling linear infinite both;
+  animation: falling linear infinite both;
+  -webkit-transform: translate3D(0, -100%, 0);
+  transform: translate3D(0, -100%, 0);
+}
+.snow--near {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+  background-size: contain;
+}
+.snow--near + .snow--alt {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+.snow--mid {
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+  background-size: contain;
+}
+.snow--mid + .snow--alt {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+.snow--far {
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+  background-size: contain;
+}
+.snow--far + .snow--alt {
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s;
+}
 
-	@keyframes slide-fwd-tl {
-		0% {
-			transform: translateZ(20rem) translateY(50rem) translateX(40rem) scale(0.1);
-		}
-		50%{
-			transform: translateZ(20rem) translateY(10rem) translateX(20rem) scale(0.1);
-		}
-		100% {
-			transform: translateZ(0) translateY(0) translateX(0);
-		}
-	}
+@-webkit-keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+    transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+    transform: translate3D(7.5%, 100%, 0);
+  }
+}
 
-	@keyframes change_background {
-		0% {
-			opacity:0;
-		}
-		100% {
-			opacity:1;
-		}
-	}
+@keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+    transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+    transform: translate3D(7.5%, 100%, 0);
+  }
+}
+@media only screen and (max-width: 1500px) {
+  body {
+    height: 50rem;
+    width: 100%;
+  }
 
-	/*copy snow*/
-	.winter-is-coming, .snow {
-		z-index: 100;
-		pointer-events: none;
-	}
+  .gift {
+    padding-top: 30%;
+    padding-left: 75%;
+  }
+  .pine_png {
+    padding-top: 13%;
+    padding-left: 10%;
+  }
+  .card_position {
+    margin-top: 2%;
+    margin-left: 35%;
+  }
+  .gift img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .gift img:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  @keyframes slide-fwd-tl {
+    0% {
+      transform: translateZ(20rem) translateY(15rem) translateX(30rem)
+        scale(0.1);
+    }
+    50% {
+      transform: translateZ(20rem) translateY(10rem) translateX(20rem)
+        scale(0.1);
+    }
+    100% {
+      transform: translateZ(0) translateY(0) translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 1100px) {
+  body {
+    height: 136.6rem;
+    width: 100%;
+  }
+  .gift img {
+    min-width: 80%;
+    min-height: 100%;
+    max-width: 50%;
+  }
+  .gift {
+    padding-top: 100%;
+    padding-left: 70%;
+  }
+  .pine_png {
+    padding-top: 85%;
+    padding-left: 10%;
+  }
+  .card_position {
+    margin-top: 30%;
+    margin-left: 28%;
+  }
+  .gift img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
-	.winter-is-coming {
-		overflow: hidden;
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		max-width: 100%;
-	}
+  @keyframes slide-fwd-tl {
+    0% {
+      transform: translateZ(20rem) translateY(50rem) translateX(30rem)
+        scale(0.1);
+    }
+    50% {
+      transform: translateZ(20rem) translateY(10rem) translateX(20rem)
+        scale(0.1);
+    }
+    100% {
+      transform: translateZ(0) translateY(0) translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    height: 102.4rem;
+    width: 100%;
+  }
+  .gift img {
+    min-width: 70%;
+    min-height: 100%;
+    max-width: 50%;
+  }
+  .gift {
+    padding-top: 100%;
+    padding-left: 70%;
+  }
+  .pine_png {
+    padding-top: 75%;
+    padding-left: 10%;
+  }
+  .card_position {
+    z-index: -1;
+    margin-top: 20%;
+    margin-left: 18%;
+  }
+  .gift img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
-	.snow {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		-webkit-animation: falling linear infinite both;
-		animation: falling linear infinite both;
-		-webkit-transform: translate3D(0, -100%, 0);
-		transform: translate3D(0, -100%, 0);
-	}
-	.snow--near {
-		-webkit-animation-duration: 10s;
-		animation-duration: 10s;
-		background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
-		background-size: contain;
-	}
-	.snow--near + .snow--alt {
-		-webkit-animation-delay: 5s;
-		animation-delay: 5s;
-	}
-	.snow--mid {
-		-webkit-animation-duration: 20s;
-		animation-duration: 20s;
-		background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
-		background-size: contain;
-	}
-	.snow--mid + .snow--alt {
-		-webkit-animation-delay: 10s;
-		animation-delay: 10s;
-	}
-	.snow--far {
-		-webkit-animation-duration: 30s;
-		animation-duration: 30s;
-		background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
-		background-size: contain;
-	}
-	.snow--far + .snow--alt {
-		-webkit-animation-delay: 15s;
-		animation-delay: 15s;
-	}
+  @keyframes slide-fwd-tl {
+    0% {
+      transform: translateZ(20rem) translateY(30rem) translateX(15rem)
+        scale(0.1);
+    }
+    50% {
+      transform: translateZ(20rem) translateY(10rem) translateX(10rem)
+        scale(0.1);
+    }
+    100% {
+      transform: translateZ(0) translateY(0) translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  body {
+    height: 81.2rem;
+    width: 100%;
+    height: 100vh;
+  }
+  .gift img {
+    min-width: 70%;
+    min-height: 100%;
+    max-width: 50%;
+  }
+  .gift {
+    padding-top: 140%;
+    padding-left: 70%;
+  }
+  .pine_png {
+    padding-top: 110%;
+    padding-left: 5%;
+  }
+  .pine_png img {
+    max-width: 50%;
+  }
+  .card_position {
+    margin-top: 40%;
+    margin-left: 18%;
+  }
+  .card {
+    width: 25rem;
+    height: 25rem;
+  }
+  .title_card h1 {
+    font-family: "christmabetregular";
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .content_card {
+    font-family: "ananda_neptouchregular";
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    color: #ce0000;
+  }
+  .gift img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
-	@-webkit-keyframes falling {
-		0% {
-			-webkit-transform: translate3D(-7.5%, -100%, 0);
-			transform: translate3D(-7.5%, -100%, 0);
-		}
-		100% {
-			-webkit-transform: translate3D(7.5%, 100%, 0);
-			transform: translate3D(7.5%, 100%, 0);
-		}
-	}
+  @keyframes slide-fwd-tl {
+    0% {
+      transform: translateZ(20rem) translateY(30rem) translateX(10rem)
+        scale(0.1);
+    }
+    50% {
+      transform: translateZ(20rem) translateY(10rem) translateX(5rem) scale(0.1);
+    }
+    100% {
+      transform: translateZ(0) translateY(0) translateX(0);
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    height: 81.2rem;
+    width: 100vw;
+    height: 100vh;
+  }
+  .gift img {
+    min-width: 80%;
+    min-height: 100%;
+    max-width: 50%;
+  }
+  .gift {
+    padding-top: 120%;
+    padding-left: 60%;
+  }
+  .pine_png {
+    padding-top: 110%;
+    padding-left: 5%;
+  }
+  .pine_png img {
+    max-width: 50%;
+  }
+  .card_position {
+    margin-top: 10%;
+    margin-left: 18%;
+  }
+  .card {
+    width: 25rem;
+    height: 40rem;
+  }
+  .title_card h1 {
+    font-family: "christmabetregular";
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5rem;
+  }
+  .content_card {
+    font-family: "ananda_neptouchregular";
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    color: #ce0000;
+  }
+  .gift img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+    cursor: pointer;
+  }
 
-	@keyframes falling {
-		0% {
-			-webkit-transform: translate3D(-7.5%, -100%, 0);
-			transform: translate3D(-7.5%, -100%, 0);
-		}
-		100% {
-			-webkit-transform: translate3D(7.5%, 100%, 0);
-			transform: translate3D(7.5%, 100%, 0);
-		}
-	}
-	@media only screen and (max-width: 1500px)
-	{
-		body{
-			height: 50rem;
-			width: 100%;
-		}
-		
-		.gift{
-			padding-top: 30%;
-			padding-left: 75%;
-		}
-		.pine_png{
-			padding-top: 13%;
-			padding-left: 10%;
-		}
-		.card_position{
-			margin-top: 2%;
-			margin-left: 35%;
-		}
-		.gift img:hover{
-			transform: scale(1.5);
-			transition: 0.5s;
-			cursor: pointer;
-		}
-		.gift img:hover{
-			transform: scale(1.3);
-			transition: 0.5s;
-			cursor: pointer;
-		}
-		@keyframes slide-fwd-tl {
-			0% {
-				transform: translateZ(20rem) translateY(15rem) translateX(30rem) scale(0.1);
-			}
-			50%{
-				transform: translateZ(20rem) translateY(10rem) translateX(20rem) scale(0.1);
-			}
-			100% {
-				transform: translateZ(0) translateY(0) translateX(0);
-			}
-		}
-	}
-	@media only screen and (max-width: 1100px)
-	{
-		body{
-			height: 136.6rem;
-			width: 100%;
-		}
-		.gift img{
-			min-width: 80%;
-			min-height: 100%;
-			max-width: 50%;
-		}
-		.gift{
-			padding-top: 100%;
-			padding-left: 70%;
-		}
-		.pine_png{
-			padding-top: 85%;
-			padding-left: 10%;
-		}
-		.card_position{
-			margin-top: 30%;
-			margin-left: 28%;
-		}
-		.gift img:hover{
-			transform: scale(1.5);
-			transition: 0.5s;
-			cursor: pointer;
-		}
-
-		@keyframes slide-fwd-tl {
-			0% {
-				transform: translateZ(20rem) translateY(50rem) translateX(30rem) scale(0.1);
-			}
-			50%{
-				transform: translateZ(20rem) translateY(10rem) translateX(20rem) scale(0.1);
-			}
-			100% {
-				transform: translateZ(0) translateY(0) translateX(0);
-			}
-		}
-	}
-	@media only screen and (max-width: 800px)
-	{
-		body{
-			height: 102.4rem;
-			width: 100%;
-		}
-		.gift img{
-			min-width: 70%;
-			min-height: 100%;
-			max-width: 50%;
-		}
-		.gift{
-			padding-top: 100%;
-			padding-left: 70%;
-		}
-		.pine_png{
-			padding-top: 75%;
-			padding-left: 10%;
-		}
-		.card_position{
-			z-index: -1;
-			margin-top: 20%;
-			margin-left: 18%;
-		}
-		.gift img:hover{
-			transform: scale(1.5);
-			transition: 0.5s;
-			cursor: pointer;
-		}
-
-		@keyframes slide-fwd-tl {
-			0% {
-				transform: translateZ(20rem) translateY(30rem) translateX(15rem) scale(0.1);
-			}
-			50%{
-				transform: translateZ(20rem) translateY(10rem) translateX(10rem) scale(0.1);
-			}
-			100% {
-				transform: translateZ(0) translateY(0) translateX(0);
-			}
-		}
-	}
-	@media only screen and (max-width: 650px)
-	{
-		body{
-			height: 81.2rem;
-			width: 100%;
-		}
-		.gift img{
-			min-width: 70%;
-			min-height: 100%;
-			max-width: 50%;
-		}
-		.gift{
-			padding-top: 140%;
-			padding-left: 70%;
-		}
-		.pine_png{
-			padding-top: 110%;
-			padding-left: 5%;
-		}
-		.pine_png img{
-			max-width: 50%
-		}
-		.card_position{
-			margin-top: 40%;
-			margin-left: 18%;
-		}
-		.card{
-			width: 25rem;
-			height: 25rem;
-		}
-		.title_card h1{
-			font-family: 'christmabetregular';
-			font-size: 2rem;
-			text-align: center;
-			padding-top: 5rem
-		}
-		.content_card{
-			font-family: 'ananda_neptouchregular';
-			font-size: 1.5rem;
-			margin-top: 3rem;
-			margin-left: 5rem;
-			color: #ce0000;
-		}
-		.gift img:hover{
-			transform: scale(1.5);
-			transition: 0.5s;
-			cursor: pointer;
-		}
-
-		@keyframes slide-fwd-tl {
-			0% {
-				transform: translateZ(20rem) translateY(30rem) translateX(10rem) scale(0.1);
-			}
-			50%{
-				transform: translateZ(20rem) translateY(10rem) translateX(5rem) scale(0.1);
-			}
-			100% {
-				transform: translateZ(0) translateY(0) translateX(0);
-			}
-		}
-	}
-
-	/*@media only screen and (max-height: 820px)
-	{
-		body{
-			height: 81.2rem;
-		}
-		.gift{
-			padding-top: 160%;
-		}
-		.pine_png{
-			padding-top: 150%;
-		}
-		.card_position{
-			margin-top: 50%;
-			margin-left: 18%;
-		}
-		@keyframes slide-fwd-tl {
-			0% {
-				transform: translateZ(20rem) translateY(30rem) translateX(10rem) scale(0.1);
-			}
-			50%{
-				transform: translateZ(20rem) translateY(10rem) translateX(5rem) scale(0.1);
-			}
-			100% {
-				transform: translateZ(0) translateY(0) translateX(0);
-			}
-		}
-	}
-	@media only screen and (max-height: 750px)
-	{
-		body{
-			height: 73.6rem;
-		}
-		.gift{
-			padding-top: 130%;
-		}
-		.pine_png{
-			padding-top: 120%;
-		}
-		.card_position{
-			margin-top: 40%;
-			margin-left: 22%;
-		}
-		
-	}
-	@media only screen and (max-height: 680px)
-	{
-		body{
-			height: 66.7rem;
-		}
-		.gift{
-			padding-top: 130%;
-		}
-		.pine_png{
-			padding-top: 115%;
-		}
-		.card_position{
-			margin-top: 40%;
-			margin-left: 18%;
-		}
-		
-	}
-	@media only screen and (max-height: 570px)
-	{
-		body{
-			height: 56.8rem;
-		}
-		.gift{
-			padding-top: 130%;
-		}
-		.pine_png{
-			padding-top: 110%;
-		}
-		.card_position{
-			margin-top: 30%;
-			margin-left: 12%;
-		}
-		
-	}*/
+  @keyframes slide-fwd-tl {
+    0% {
+      transform: translateZ(20rem) translateY(30rem) translateX(10rem)
+        scale(0.1);
+    }
+    50% {
+      transform: translateZ(20rem) translateY(10rem) translateX(5rem) scale(0.1);
+    }
+    100% {
+      transform: translateZ(0) translateY(0) translateX(0);
+    }
+  }
+}
