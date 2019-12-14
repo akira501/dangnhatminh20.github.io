@@ -433,6 +433,13 @@ i {
   }
 }
 @media only screen and (max-width: 400px) {
+  .back a {
+    font-family: "christmabetregular";
+    font-size: 3rem;
+    text-decoration: none;
+    color: #ce0000;
+    padding: 2rem;
+  }
   body {
     height: 81.2rem;
     width: 100vw;
