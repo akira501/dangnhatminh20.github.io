@@ -25,6 +25,7 @@ audio {
   text-decoration: none;
   color: #ce0000;
   padding: 2rem;
+  z-index: 99999;
 }
 .pine_png {
   position: absolute;
