@@ -450,7 +450,7 @@ i {
     }
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
   .back a {
     font-family: "christmabetregular";
     font-size: 3rem;
