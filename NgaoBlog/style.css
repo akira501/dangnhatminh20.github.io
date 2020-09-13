@@ -7,11 +7,22 @@ html { overflow-y: scroll; }
 
 .header nav {
   padding: 0 45px;
-  height: 110px;
 }
 
 .content-area {
   padding: 80px;
+}
+
+.nav-home {
+  height: 110px;
+}
+
+.nav-home-text {
+  margin: auto;
+}
+
+.nav-toggler-icon {
+  margin: auto;
 }
 
 .grid {
@@ -152,5 +163,23 @@ footer {
   }
 }
 @media only screen and (max-width: 479px){
+  .header nav {
+    padding: 0px;
+  }
 
+  .nav-link, .dropdown-menu {
+    text-align: center;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .dropdown-menu {
+    border: none;
+  }
+
+  .nav-home {
+    width: 100%;
+  }
 }
